@@ -6,7 +6,6 @@ const App = () => {
     <Router>
       <Switch>
         <Route path='/' exact> <Home /></Route>
-        <Redirect to='/' />
       </Switch>
     </Router>
   )
