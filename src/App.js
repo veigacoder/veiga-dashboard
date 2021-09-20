@@ -1,4 +1,5 @@
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
+import React from 'react'
 import { Home } from './components'
 
 const App = () => {
