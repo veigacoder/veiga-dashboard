@@ -1,14 +1,17 @@
-import { Router, Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import React from 'react'
 import { Home } from './components'
 
-const App = () => {
+export const App = () => {
   return (
-    <Router>
+
+    <>
       <Switch>
-        <Route path='/' exact> <Home /></Route>
+        <Route path='/' component={Home} exact><Home /></Route>
+        <Redirect to='/' exact />
       </Switch>
-    </Router>
+    </>
+
   )
 }
 
