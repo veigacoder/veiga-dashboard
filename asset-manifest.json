@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/veiga-dashboard/static/css/main.a617e044.chunk.css",
+    "main.js": "/veiga-dashboard/static/js/main.924a9f23.chunk.js",
+    "main.js.map": "/veiga-dashboard/static/js/main.924a9f23.chunk.js.map",
+    "runtime-main.js": "/veiga-dashboard/static/js/runtime-main.887b89f7.js",
+    "runtime-main.js.map": "/veiga-dashboard/static/js/runtime-main.887b89f7.js.map",
+    "static/js/2.5bb58e53.chunk.js": "/veiga-dashboard/static/js/2.5bb58e53.chunk.js",
+    "static/js/2.5bb58e53.chunk.js.map": "/veiga-dashboard/static/js/2.5bb58e53.chunk.js.map",
+    "static/js/3.7369fa1e.chunk.js": "/veiga-dashboard/static/js/3.7369fa1e.chunk.js",
+    "static/js/3.7369fa1e.chunk.js.map": "/veiga-dashboard/static/js/3.7369fa1e.chunk.js.map",
+    "index.html": "/veiga-dashboard/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/veiga-dashboard/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.5bb58e53.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.5bb58e53.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/veiga-dashboard/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.887b89f7.js",
+    "static/js/2.5bb58e53.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.924a9f23.chunk.js"
+  ]
+}
