@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/veiga-dashboard/static/js/main.7985db6c.chunk.js",
-    "main.js.map": "/veiga-dashboard/static/js/main.7985db6c.chunk.js.map",
+    "main.js": "/veiga-dashboard/static/js/main.f2aee040.chunk.js",
+    "main.js.map": "/veiga-dashboard/static/js/main.f2aee040.chunk.js.map",
     "runtime-main.js": "/veiga-dashboard/static/js/runtime-main.d2316241.js",
     "runtime-main.js.map": "/veiga-dashboard/static/js/runtime-main.d2316241.js.map",
-    "static/js/2.c60baace.chunk.js": "/veiga-dashboard/static/js/2.c60baace.chunk.js",
-    "static/js/2.c60baace.chunk.js.map": "/veiga-dashboard/static/js/2.c60baace.chunk.js.map",
+    "static/js/2.f13397d3.chunk.js": "/veiga-dashboard/static/js/2.f13397d3.chunk.js",
+    "static/js/2.f13397d3.chunk.js.map": "/veiga-dashboard/static/js/2.f13397d3.chunk.js.map",
     "index.html": "/veiga-dashboard/index.html",
-    "static/js/2.c60baace.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.c60baace.chunk.js.LICENSE.txt"
+    "static/js/2.f13397d3.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.f13397d3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d2316241.js",
-    "static/js/2.c60baace.chunk.js",
-    "static/js/main.7985db6c.chunk.js"
+    "static/js/2.f13397d3.chunk.js",
+    "static/js/main.f2aee040.chunk.js"
   ]
 }
