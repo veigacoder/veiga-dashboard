@@ -1,0 +1,2 @@
+(this.webpackJsonpdashboard=this.webpackJsonpdashboard||[]).push([[0],{9:function(e,t,n){"use strict";n.r(t);var r=n(1),c=n.n(r),s=n(3),d=n.n(s),a=n(0),o=function(){return Object(a.jsx)("div",{children:"a"})};d.a.render(Object(a.jsx)(c.a.StrictMode,{children:Object(a.jsx)(o,{})}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.8062054c.chunk.js.map
