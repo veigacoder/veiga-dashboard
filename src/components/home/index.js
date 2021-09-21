@@ -1,21 +1,38 @@
 import React from 'react'
-import { Card, CardBody, CardFooter, CardHeader, CardLabel } from '../../containers/Card/styles'
-import { MainBlock } from './styles'
+import { Card, CardBody, CardFooter, CardHeader, CardLabel } from '../../containers/Card'
+import { PageBlock } from '../../containers/Display'
 
 export const Home = () => {
   return (
-    <MainBlock>
+    <PageBlock>
       <Card round>
         <CardHeader>
-          <CardLabel>HOME</CardLabel>
+          <CardLabel>Dashboard</CardLabel>
         </CardHeader>
         <CardBody>
-          HOME <br />
-          HOME <br />
+          Some interesting progress graphs
         </CardBody>
-        <CardFooter>a</CardFooter>
+        <CardFooter>Lean More</CardFooter>
       </Card>
-    </MainBlock>
+      <Card round>
+        <CardHeader>
+          <CardLabel>Dashboard</CardLabel>
+        </CardHeader>
+        <CardBody>
+          Some interesting progress graphs
+        </CardBody>
+        <CardFooter>Lean More</CardFooter>
+      </Card>
+      <Card round>
+        <CardHeader>
+          <CardLabel>Dashboard</CardLabel>
+        </CardHeader>
+        <CardBody>
+          Some interesting progress graphs
+        </CardBody>
+        <CardFooter>Lean More</CardFooter>
+      </Card>
+    </PageBlock>
   )
 }
 
