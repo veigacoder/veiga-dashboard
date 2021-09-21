@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../../containers/Buttons'
 import { Card, CardBody, CardFooter, CardHeader, CardLabel } from '../../containers/Card'
 import { PageBlock } from '../../containers/Display'
 
@@ -12,25 +13,7 @@ export const Home = () => {
         <CardBody>
           Some interesting progress graphs
         </CardBody>
-        <CardFooter>Lean More</CardFooter>
-      </Card>
-      <Card round>
-        <CardHeader>
-          <CardLabel>Dashboard</CardLabel>
-        </CardHeader>
-        <CardBody>
-          Some interesting progress graphs
-        </CardBody>
-        <CardFooter>Lean More</CardFooter>
-      </Card>
-      <Card round>
-        <CardHeader>
-          <CardLabel>Dashboard</CardLabel>
-        </CardHeader>
-        <CardBody>
-          Some interesting progress graphs
-        </CardBody>
-        <CardFooter>Lean More</CardFooter>
+        <CardFooter><Button>Lean More</Button></CardFooter>
       </Card>
     </PageBlock>
   )

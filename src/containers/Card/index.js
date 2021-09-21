@@ -37,9 +37,9 @@ justify-content: center;
 align-items: center;
 display: flex;
 padding: .5rem;
-margin-bottom: .2em;
+width: 80%;
 height: max-content;
-border-top: 2px dashed ${fg.normal};
+border-top: .1px dashed ${fg.translucid};
 `
 export const CardLabel = styled.div`
 justify-content: center;
@@ -48,7 +48,7 @@ display: flex;
 padding: .5rem;
 position: absolute;
 box-shadow: 1px 1px 1px  ${bg.darkest};
-background-color: ${bg.action};
+background-image: linear-gradient(to right, ${bg.action}  10% ,${bg.toAction} 90%);
 font-size: 90%;
 top: -30%;
 width: 1;
