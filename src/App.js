@@ -5,12 +5,10 @@ import { Home } from './components'
 export const App = () => {
   return (
 
-    <>
-      <Switch>
-        <Route path='/' component={Home} exact><Home /></Route>
-        <Redirect to='/' exact />
-      </Switch>
-    </>
+    <Switch>
+      <Route path='/' component={Home} exact><Home /></Route>
+      <Redirect to='/' exact />
+    </Switch>
 
   )
 }
