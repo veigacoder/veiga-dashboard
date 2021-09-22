@@ -7,7 +7,7 @@ export const AppBar = () => {
       <BarContent>
         <Card>
           <CardBody>
-            Topbar
+            VEIGA
           </CardBody>
         </Card>
         <Card>

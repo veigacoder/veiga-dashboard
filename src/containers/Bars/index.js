@@ -6,7 +6,7 @@ width: 100%;
 height: 1;
 display: flex;
 flex-direction: row;
-background-color: ${props => props.light ? bg.light : bg.dark};
+background-color: ${props => props.light ? bg.light : bg.darkest};
 color: ${props => props.light ? fg.dark : fg.normal};
 `
 export const BarContent = styled.div`
@@ -22,11 +22,15 @@ export const SideBar = styled.div`
 width: max-content;
 height: 100vh;
 display: flex;
-background-color: ${props => props.light ? bg.light : bg.dark};
+background-color: ${props => props.light ? bg.light : bg.darkest};
 color: ${props => props.light ? fg.dark : fg.normal};
 `
+
 export const SideBarContent = styled.div`
 padding: 0.5rem;
 width: max-content;
+display: flex;
+justify-content: center;
+align-items: center;
 
 `
