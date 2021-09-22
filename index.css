@@ -7,3 +7,9 @@ html {
   display: block;
   height: 100%;
 }
+
+@media screen and (max-width: 997px) {
+  * {
+    font-size: 2vw;
+  }
+}
