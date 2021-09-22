@@ -1,7 +1,7 @@
 export const bg = {
-  darkest: '#0f0f0f',
-  dark: '#1C1D21',
-  normal: '#585859',
+  darkest: '#101010',
+  dark: '#222222',
+  normal: '#757575',
   light: '#BEBDBF',
   translucid: '#1C1D2155',
   actionTranslucid: '#37474F33',

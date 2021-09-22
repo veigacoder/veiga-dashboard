@@ -23,11 +23,11 @@ justify-content: space-evenly;
 align-items: center;
 cursor: pointer;
 width: 100%;
-background-color: ${bg.normal};
+background-color: ${bg.dark};
 color: ${fg.normal};
 transition: all 200ms cubic-bezier(.9,.12,.5,.97);
 :hover {
-  background-color: ${bg.dark};
+  background-color: ${bg.normal};
 }
 
 `

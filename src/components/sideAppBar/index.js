@@ -6,7 +6,7 @@ export const SideAppBar = () => {
   return (
     <SideBar>
       <SideBarContent>
-        <Card round>
+        <Card>
           <IconButton><Icon.Menu size='2rem' /> Menu</IconButton>
           <IconButton><Icon.Home size='2rem' /> Home</IconButton>
           <IconButton><Icon.BookOpen size='2rem' /> Dashboard</IconButton>
