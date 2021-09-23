@@ -9,7 +9,7 @@ display: flex;
 position: static;
 flex-direction: column;
 align-items: center;
-color:  ${fg.dark} ;
+color: ${fg.dark};
 width: max-content;
 height: max-content;
 border-radius: ${props => props.round ? '.5em' : 'none'};
