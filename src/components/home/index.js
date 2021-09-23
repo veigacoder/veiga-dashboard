@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
 import { Bag, Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import cleaner from '../../assets/icons/cleaner.svg'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { color, gradient } from '../../colors'
 import * as Icon from 'react-feather'
@@ -20,7 +21,7 @@ export const Home = () => {
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <Icon.Archive />
+                <div><img src={cleaner} alt='cleaner' width='24px' height='24px' /></div>
               </ButtonHeader>
               Clean up space
             </Button>

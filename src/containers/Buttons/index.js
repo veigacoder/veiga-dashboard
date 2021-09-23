@@ -13,13 +13,19 @@ outline-style: none;
 border: none;
 width: 100%;
 cursor: pointer;
-padding: 0.7rem;
+padding: 1rem;
 font-size: ${props => props.fontSize};
 transition: all 200ms cubic-bezier(.9,.12,.5,.97);
 font-weight: 450;
+border-radius: 2rem;
+&+&{
+  margin-top: 2rem;
+}
 
 :hover {
   background-color: ${bg.transparent};
+  box-shadow: 0px 4px 20px ${bg.translucid};
+  z-index: 11;
 }
 `
 export const ButtonHeader = styled.div`

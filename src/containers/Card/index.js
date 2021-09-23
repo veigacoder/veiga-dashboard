@@ -61,7 +61,7 @@ export const CardLabel = styled.div.attrs(props => ({
 display: flex;
 justify-content: center;
 padding: 1rem;
-box-shadow: 0px 0px 20px  ${bg.actionTranslucid};
+box-shadow: 0px 0px 20px  ${bg.transparent};
 background-image: ${props => props.gradient};
 color: ${fg.normal};
 border-radius: ${props => props.round ? '.5em' : 'none'};
