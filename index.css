@@ -21,9 +21,7 @@ html {
 
 a {
   text-decoration: none;
-}
-a:visited  {
-  color: inherit;
+  color: #1C1D2177;
 }
 
 a.goal {
