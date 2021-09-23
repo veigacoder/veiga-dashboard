@@ -4,12 +4,12 @@ import { bg } from '../../colors'
 export const Display = styled.div`
 height: 100%;
 width: 100%;
-background-color: ${bg.darkest};
+background-color: ${bg.light};
 display: flex;
 flex-direction: row;
 `
 export const DisplayTop = styled.div`
-height: 10%;
+height: max-content;
 width: 100%;
 display: flex;
 `
@@ -25,7 +25,16 @@ width: 100%;
 `
 export const PageBlock = styled.div`
 display: flex;
-padding: 2rem;
+flex-direction: column;
 height: 100%;
-background-color: ${bg.normal};
+background-color: ${bg.light};
+`
+export const PageRow = styled.div.attrs(props => ({
+  columns: props.number || '3'
+}))`
+display: grid;
+grid-template-columns: repeat(${props => props.columns},1fr);
+justify-content: space-between;
+padding: 2rem;
+height: max-content;
 `

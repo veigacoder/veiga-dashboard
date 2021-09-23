@@ -1,20 +1,23 @@
 import styled from 'styled-components'
-import { bg, fg } from '../../colors'
+import { bg, fg, color } from '../../colors'
 
 export const Bar = styled.div`
 width: 100%;
-height: 1;
+height: max-content;
 display: flex;
 flex-direction: row;
-background-color: ${props => props.light ? bg.light : bg.darkest};
+align-items: center;
+justify-content: center;
+background-color: #fff0;
 color: ${props => props.light ? fg.dark : fg.normal};
+z-index: 10;
 `
 export const BarContent = styled.div`
-padding: 0.5rem;
 height: max-content;
 width: 100%;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+padding: .7rem;
+display: flex;
+justify-content: space-evenly;
 flex-direction: row;
 
 `
@@ -22,15 +25,29 @@ export const SideBar = styled.div`
 width: max-content;
 height: 100vh;
 display: flex;
-background-color: ${props => props.light ? bg.light : bg.darkest};
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+background-color: ${props => props.darl ? bg.dark : bg.platinum};
 color: ${props => props.light ? fg.dark : fg.normal};
+z-index: 10;
+box-shadow: 3px 0 20px ${bg.translucid};
 `
 
 export const SideBarContent = styled.div`
-padding: 0.5rem;
+padding: 1rem;
+flex-direction: column;
 width: max-content;
 display: flex;
 justify-content: center;
 align-items: center;
-
+`
+export const SideBarHeader = styled.div`
+padding: 1rem;
+font-size: 30px;
+color: ${fg.dark};
+:hover  { 
+    color: ${bg.actionTranslucid};
+    cursor: pointer;
+}
 `

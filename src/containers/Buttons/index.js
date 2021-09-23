@@ -1,33 +1,57 @@
 import styled from 'styled-components'
 import { bg, fg } from '../../colors'
 
-export const Button = styled.button`
-background-color: ${bg.translucid};
+export const Button = styled.button.attrs(props => ({
+  fontSize: props.size || '1rem'
+}))`
+background-color: ${bg.actionTranslucid};
 color: ${fg.dark};
+display: flex;
+align-items: center;
+text-align: center;
 outline-style: none;
 border: none;
-
+width: 100%;
 cursor: pointer;
-padding: 0.5rem;
+padding: 0.7rem;
+font-size: ${props => props.fontSize};
 transition: all 200ms cubic-bezier(.9,.12,.5,.97);
-:active {
-  background-color: ${bg.actionTranslucid};
+font-weight: 450;
+
+:hover {
+  background-color: ${bg.transparent};
 }
 `
+export const ButtonHeader = styled.div`
+display: flex;
+align-items: center;
+outline-style: none;
+border: none;
+width: max-content;
+cursor: pointer;
+margin-right: 1rem;
+height: 100%;
+`
+
 export const IconButton = styled.button`
 font-size: 1rem;
-padding: .7rem;
+padding: 1rem;
 border-style: none;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 cursor: pointer;
 width: 100%;
-background-color: ${bg.dark};
+background-color: ${bg.action};
 color: ${fg.normal};
 transition: all 200ms cubic-bezier(.9,.12,.5,.97);
+&+&{
+  border-top: 3px solid ${fg.translucid};
+}
+
 :hover {
-  background-color: ${bg.normal};
+  background-color: ${bg.toAction};
+  color: ${fg.normal};
 }
 
 `

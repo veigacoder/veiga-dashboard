@@ -1,29 +1,31 @@
 export const bg = {
-  darkest: '#101010',
-  dark: '#222222',
+  darkest: '#143660',
+  dark: '#21528F',
   normal: '#757575',
-  light: '#BEBDBF',
-  translucid: '#1C1D2155',
-  actionTranslucid: '#37474F33',
-  action: '#37474F',
-  toAction: '#546E7A'
+  light: '#CACACA',
+  platinum: '#E5E5E5',
+  translucid: '#1C1D2177',
+  transparent: '#326DB322',
+  actionTranslucid: '#326DB344',
+  action: '#326DB3',
+  toAction: '#4274B1'
 }
 
 export const fg = {
-  dark: '#151515',
+  dark: '#2B2F36',
   normal: '#DDDDDD',
-  translucid: '#15151588'
+  translucid: '#15151511'
 }
 
 export const color = {
-  red: '#b62f00',
-  green: '#168039',
-  blue: '#2962FF'
+  red: '#B63535',
+  green: '#26BF2B',
+  blue: '#1855FE'
 }
 
 export const gradient = {
-  red: 'linear-gradient(75deg, #b62f00, #900B0A)',
-  green: 'linear-gradient(75deg, #168039, #33691E)',
-  blue: 'linear-gradient(75deg, #2962FF, #0D47A1)',
-  default: 'linear-gradient(75deg, #151515, #1C1D21)'
+  red: 'linear-gradient(45deg, #C62F2F, #B63535)',
+  green: 'linear-gradient(45deg, #41D246, #26BF2B )',
+  blue: 'linear-gradient(45deg, #2962FF, #1855FE)',
+  default: 'linear-gradient(45deg, #151515, #1C1D21)'
 }

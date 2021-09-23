@@ -1,20 +1,24 @@
 import { Bar, BarContent } from '../../containers/Bars'
 import { Card, CardBody } from '../../containers/Card'
+import { PageRow } from '../../containers/Display'
 
 export const AppBar = () => {
   return (
     <Bar>
+
       <BarContent>
+
         <Card>
           <CardBody>
-            VEIGA
+            CARD
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            Topbar
+            CARD
           </CardBody>
         </Card>
+
       </BarContent>
     </Bar>
   )
