@@ -24,7 +24,7 @@ position: static;
 flex-direction: column;
 align-items: center;
 color:  ${fg.dark} ;
-width: 100%;
+width: available;
 height: max-content;
 border-radius: ${props => props.round ? '.5em' : 'none'};
 box-shadow: 0 4px 20px 0 ${bg.translucid};
@@ -37,6 +37,7 @@ display: flex;
 padding: 1rem;
 height: fit-content;
 border-radius: inherit;
+flex-wrap: wrap;
 `
 export const CardHeader = styled.div`
 display: flex;
@@ -56,7 +57,7 @@ height: max-content;
 border-top: .1px dashed ${bg.actionTranslucid};
 `
 export const CardLabel = styled.div.attrs(props => ({
-  gradient: props.gradient || gradient.default
+  gradient: props.color || gradient.default
 }))`
 display: flex;
 justify-content: center;

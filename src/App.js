@@ -1,24 +1,29 @@
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect, BrowserRouter as Router, useLocation } from 'react-router-dom'
 import React from 'react'
-import { AppBar, Home, SideAppBar } from './components'
+import { AppBar, Home, SideAppBar, Icons } from './components'
 import { Display, DisplayBody, DisplaySide, DisplayTop } from './containers/Display'
 
 export const App = () => {
   return (
-    <Display>
-      <DisplaySide>
-        <SideAppBar />
-      </DisplaySide>
-      <DisplayBody>
-        <DisplayTop>
-          <AppBar />
-        </DisplayTop>
-        <Switch>
-          <Route path='/' component={Home} exact><Home /></Route>
-          <Redirect to='/' exact />
-        </Switch>
-      </DisplayBody>
-    </Display>
+    <Router>
+      <Display>
+        <DisplaySide>
+          <SideAppBar />
+        </DisplaySide>
+        <DisplayBody>
+          <DisplayTop>
+            <AppBar />
+          </DisplayTop>
+          <Switch>
+            <Route sensitive path='/' component={Home} exact><Home /></Route>
+            <Route sensitive path='/icons' component={Icons} exact><Icons /></Route>
+            <Redirect to='/' exact />
+          </Switch>
+        </DisplayBody>
+
+      </Display>
+
+    </Router>
   )
 }
 

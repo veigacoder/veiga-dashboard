@@ -1,7 +1,9 @@
 import React from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
-import { Bag, Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
-import cleaner from '../../assets/icons/cleaner.svg'
+import { Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import duster from '../../assets/icons/duster.svg'
+import eye from '../../assets/icons/eye.svg'
+import book from '../../assets/icons/book.svg'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { color, gradient } from '../../colors'
 import * as Icon from 'react-feather'
@@ -12,7 +14,7 @@ export const Home = () => {
       <PageRow>
         <Card round>
           <CardHeader>
-            <CardLabel round gradient={gradient.red}><Icon.AlertTriangle /> </CardLabel>
+            <CardLabel round color={gradient.red}><Icon.AlertTriangle /> </CardLabel>
             <HeaderData><span>Alert</span> <span>Hard Disk overload</span></HeaderData>
           </CardHeader>
           <CardBody>
@@ -21,7 +23,9 @@ export const Home = () => {
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <div><img src={cleaner} alt='cleaner' width='24px' height='24px' /></div>
+                <div>
+                  <img src={duster} alt='duster' width='24px' height='24px' />
+                </div>
               </ButtonHeader>
               Clean up space
             </Button>
@@ -29,7 +33,7 @@ export const Home = () => {
         </Card>
         <Card round>
           <CardHeader>
-            <CardLabel round gradient={gradient.green}>
+            <CardLabel round color={gradient.green}>
               <Icon.Check />
             </CardLabel>
             <HeaderData><span>Success</span> <span>Finished tasks</span></HeaderData>
@@ -38,7 +42,9 @@ export const Home = () => {
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <Icon.Eye />
+                <div>
+                  <img src={eye} alt='eye' width='24px' height='24px' />
+                </div>
               </ButtonHeader>
               See all
             </Button>
@@ -46,7 +52,7 @@ export const Home = () => {
         </Card>
         <Card round>
           <CardHeader>
-            <CardLabel round gradient={gradient.blue}>
+            <CardLabel round color={gradient.blue}>
               <Icon.Crosshair />
             </CardLabel>
             <HeaderData><span>Target</span> <span>Week goal</span></HeaderData>
@@ -57,7 +63,9 @@ export const Home = () => {
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <Icon.BookOpen />
+                <div>
+                  <img src={book} alt='book' width='24px' height='24px' />
+                </div>
               </ButtonHeader>
               Lean More
             </Button>

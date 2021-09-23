@@ -18,9 +18,6 @@ font-size: ${props => props.fontSize};
 transition: all 200ms cubic-bezier(.9,.12,.5,.97);
 font-weight: 450;
 border-radius: 2rem;
-&+&{
-  margin-top: 2rem;
-}
 
 :hover {
   background-color: ${bg.transparent};
