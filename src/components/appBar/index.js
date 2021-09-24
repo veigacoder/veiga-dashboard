@@ -1,7 +1,8 @@
 import { Bar, BarContent } from '../../containers/Bars'
 import { Card, CardBody } from '../../containers/Card'
 import { PageRow } from '../../containers/Display'
-import save from '../../assets/icons/save.svg'
+import dashboard from '../../assets/icons/dashboard.svg'
+import person from '../../assets/icons/person.svg'
 
 export const AppBar = () => {
   return (
@@ -12,13 +13,15 @@ export const AppBar = () => {
         <Card>
           <CardBody>
             <div>
-              <img src={save} alt='save' width='24px' height='24px' />
+              <img src={dashboard} alt='dashboard' width='24px' height='24px' />
             </div>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            CARD
+            <div>
+              <img src={person} alt='person' width='24px' height='24px' />
+            </div>
           </CardBody>
         </Card>
 

@@ -8,7 +8,8 @@ export const bg = {
   transparent: '#326DB322',
   actionTranslucid: '#326DB344',
   action: '#326DB3',
-  toAction: '#4274B1'
+  toAction: '#4274B1',
+  creation: '#91C3BE'
 }
 
 export const fg = {
@@ -27,5 +28,6 @@ export const gradient = {
   red: 'linear-gradient(45deg, #C62F2F, #B63535)',
   green: 'linear-gradient(45deg, #41D246, #26BF2B )',
   blue: 'linear-gradient(45deg, #2962FF, #1855FE)',
+  creation: 'linear-gradient(45deg, #91C3BE, #77A4A0)',
   default: 'linear-gradient(45deg, #151515, #1C1D21)'
 }

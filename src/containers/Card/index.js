@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { bg, color, fg, gradient } from '../../colors'
+import { bg, fg, gradient } from '../../colors'
 
 export const Card = styled.div.attrs(props => ({
   color: props.color || bg.platinum
@@ -41,11 +41,10 @@ flex-wrap: wrap;
 `
 export const CardHeader = styled.div`
 display: flex;
-
 width: 1;
+
 height: fit-content;
 border-radius: inherit;
-
 `
 export const CardFooter = styled.div`
 justify-content: center;

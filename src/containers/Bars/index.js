@@ -7,23 +7,26 @@ height: max-content;
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content: center;
+justify-content: flex-end;
 background-color: #fff0;
 color: ${props => props.light ? fg.dark : fg.normal};
 z-index: 10;
 `
-export const BarContent = styled.div`
+export const BarContent = styled.div.attrs(props => ({
+  columns: props.number || '12'
+}))`
+justify-content: flex-end;
+direction: rtl;
 height: max-content;
 width: 100%;
 padding: .7rem;
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
+display: grid;
+grid-template-columns: repeat(${props => props.columns}, 1fr);
 
 `
 export const SideBar = styled.div`
 width: max-content;
-height: 100vh;
+height: 100%;
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -38,8 +41,9 @@ export const SideBarContent = styled.div`
 padding: 1rem;
 flex-direction: column;
 width: max-content;
+height: 100%;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 `
 export const SideBarHeader = styled.div`
