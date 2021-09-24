@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.js": "/veiga-dashboard/static/js/main.bc81e761.chunk.js",
-    "main.js.map": "/veiga-dashboard/static/js/main.bc81e761.chunk.js.map",
+    "main.js": "/veiga-dashboard/static/js/main.008dc1fc.chunk.js",
+    "main.js.map": "/veiga-dashboard/static/js/main.008dc1fc.chunk.js.map",
     "runtime-main.js": "/veiga-dashboard/static/js/runtime-main.d2316241.js",
     "runtime-main.js.map": "/veiga-dashboard/static/js/runtime-main.d2316241.js.map",
     "static/js/2.afa2888d.chunk.js": "/veiga-dashboard/static/js/2.afa2888d.chunk.js",
     "static/js/2.afa2888d.chunk.js.map": "/veiga-dashboard/static/js/2.afa2888d.chunk.js.map",
     "index.html": "/veiga-dashboard/index.html",
     "static/js/2.afa2888d.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.afa2888d.chunk.js.LICENSE.txt",
-    "static/media/book.ddcd749b.svg": "/veiga-dashboard/static/media/book.ddcd749b.svg",
+    "static/media/book.3f91d08c.svg": "/veiga-dashboard/static/media/book.3f91d08c.svg",
     "static/media/dashboard.bb3b5761.svg": "/veiga-dashboard/static/media/dashboard.bb3b5761.svg",
     "static/media/duster.0e6713fd.svg": "/veiga-dashboard/static/media/duster.0e6713fd.svg",
     "static/media/eye.d95be0d1.svg": "/veiga-dashboard/static/media/eye.d95be0d1.svg",
     "static/media/eyeclosed.96544081.svg": "/veiga-dashboard/static/media/eyeclosed.96544081.svg",
+    "static/media/home.f8ce4550.svg": "/veiga-dashboard/static/media/home.f8ce4550.svg",
+    "static/media/icons.fc44f2ff.svg": "/veiga-dashboard/static/media/icons.fc44f2ff.svg",
+    "static/media/magnify.7a16b93d.svg": "/veiga-dashboard/static/media/magnify.7a16b93d.svg",
     "static/media/person.12af9263.svg": "/veiga-dashboard/static/media/person.12af9263.svg",
-    "static/media/sandbox.6801535c.svg": "/veiga-dashboard/static/media/sandbox.6801535c.svg",
-    "static/media/sandbox2.c1583c92.svg": "/veiga-dashboard/static/media/sandbox2.c1583c92.svg",
+    "static/media/sandbox.954fc90d.svg": "/veiga-dashboard/static/media/sandbox.954fc90d.svg",
+    "static/media/sandbox2.7d6c7ff4.svg": "/veiga-dashboard/static/media/sandbox2.7d6c7ff4.svg",
     "static/media/save.9d03ad62.svg": "/veiga-dashboard/static/media/save.9d03ad62.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d2316241.js",
     "static/js/2.afa2888d.chunk.js",
-    "static/js/main.bc81e761.chunk.js"
+    "static/js/main.008dc1fc.chunk.js"
   ]
 }
