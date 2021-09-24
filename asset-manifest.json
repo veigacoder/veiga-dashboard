@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/veiga-dashboard/static/js/main.649c3868.chunk.js",
-    "main.js.map": "/veiga-dashboard/static/js/main.649c3868.chunk.js.map",
+    "main.js": "/veiga-dashboard/static/js/main.53595c38.chunk.js",
+    "main.js.map": "/veiga-dashboard/static/js/main.53595c38.chunk.js.map",
     "runtime-main.js": "/veiga-dashboard/static/js/runtime-main.d2316241.js",
     "runtime-main.js.map": "/veiga-dashboard/static/js/runtime-main.d2316241.js.map",
     "static/js/2.91597dac.chunk.js": "/veiga-dashboard/static/js/2.91597dac.chunk.js",
@@ -9,11 +9,14 @@
     "index.html": "/veiga-dashboard/index.html",
     "static/js/2.91597dac.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.91597dac.chunk.js.LICENSE.txt",
     "static/media/book.3f91d08c.svg": "/veiga-dashboard/static/media/book.3f91d08c.svg",
+    "static/media/clipboard.f77970aa.svg": "/veiga-dashboard/static/media/clipboard.f77970aa.svg",
     "static/media/dashboard.bb3b5761.svg": "/veiga-dashboard/static/media/dashboard.bb3b5761.svg",
-    "static/media/duster.0e6713fd.svg": "/veiga-dashboard/static/media/duster.0e6713fd.svg",
+    "static/media/duster.7603a2b2.svg": "/veiga-dashboard/static/media/duster.7603a2b2.svg",
+    "static/media/edit.85fc5d6c.svg": "/veiga-dashboard/static/media/edit.85fc5d6c.svg",
+    "static/media/editinfo.f717c346.svg": "/veiga-dashboard/static/media/editinfo.f717c346.svg",
     "static/media/eye.d95be0d1.svg": "/veiga-dashboard/static/media/eye.d95be0d1.svg",
     "static/media/eyeclosed.96544081.svg": "/veiga-dashboard/static/media/eyeclosed.96544081.svg",
-    "static/media/home.f8ce4550.svg": "/veiga-dashboard/static/media/home.f8ce4550.svg",
+    "static/media/home.aee31afc.svg": "/veiga-dashboard/static/media/home.aee31afc.svg",
     "static/media/icons.fc44f2ff.svg": "/veiga-dashboard/static/media/icons.fc44f2ff.svg",
     "static/media/magnify.7a16b93d.svg": "/veiga-dashboard/static/media/magnify.7a16b93d.svg",
     "static/media/person.12af9263.svg": "/veiga-dashboard/static/media/person.12af9263.svg",
@@ -24,6 +27,6 @@
   "entrypoints": [
     "static/js/runtime-main.d2316241.js",
     "static/js/2.91597dac.chunk.js",
-    "static/js/main.649c3868.chunk.js"
+    "static/js/main.53595c38.chunk.js"
   ]
 }
