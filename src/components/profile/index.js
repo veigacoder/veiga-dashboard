@@ -1,19 +1,21 @@
 import React from 'react'
 import { color, gradient, bg } from '../../colors'
-import { Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { Button, ButtonHeader } from '../../containers/Buttons'
 import save from '../../assets/icons/save.svg'
+import { UserFormulary } from '..'
+import { SubmitButton } from '../../containers/Formulary'
 
 export const Profile = () => {
   return (
     <PageBlock>
-      <PageRow number='2'>
+      <PageRow number='2' mdNumber='1' smNumber='1'>
         <Card round>
           <CardHeader>
-            <CardLabel color={gradient.red} round>
+            <GradientLabel color={gradient.red} round>
               <h1> Under Construction</h1>
-            </CardLabel>
+            </GradientLabel>
             <HeaderData>
               <span>Unfinished area</span>
               <span><a className='alert'>User Profile</a></span>
@@ -23,9 +25,9 @@ export const Profile = () => {
 
         <Card round>
           <CardHeader>
-            <CardLabel color={gradient.creation} round>
+            <GradientLabel color={gradient.creation} round>
               <h1> Username</h1>
-            </CardLabel>
+            </GradientLabel>
             <HeaderData>
               <span>Unfinished area</span>
               <span><a className='creation'>User Profile</a></span>
@@ -33,17 +35,16 @@ export const Profile = () => {
           </CardHeader>
           <CardBody>
             <form>
-              <input placeholder='login' disabled />
-              <input placeholder='senha' />
+              <UserFormulary />
             </form>
           </CardBody>
           <CardFooter>
-            <Button>
+            <SubmitButton>
               <ButtonHeader>
                 <img src={save} alt='save' width='24' height='24' />
               </ButtonHeader>
               Update profile!
-            </Button>
+            </SubmitButton>
 
           </CardFooter>
         </Card>
