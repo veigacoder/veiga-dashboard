@@ -29,5 +29,7 @@ export const gradient = {
   green: 'linear-gradient(45deg, #41D246, #26BF2B )',
   blue: 'linear-gradient(45deg, #2962FF, #1855FE)',
   creation: 'linear-gradient(45deg, #91C3BE, #77A4A0)',
-  default: 'linear-gradient(45deg, #151515, #1C1D21)'
+  default: 'linear-gradient(45deg, #151515, #1C1D21)',
+  noColor: 'linear-gradient(45deg, #15151500, #1C1D2100)'
+
 }

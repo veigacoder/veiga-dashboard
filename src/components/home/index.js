@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
-import { Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
 import duster from '../../assets/icons/duster.svg'
 import eye from '../../assets/icons/eye.svg'
 import book from '../../assets/icons/book.svg'
@@ -14,7 +14,7 @@ export const Home = () => {
       <PageRow>
         <Card round>
           <CardHeader>
-            <CardLabel round color={gradient.red}><Icon.AlertTriangle /> </CardLabel>
+            <GradientLabel round color={gradient.red}><Icon.AlertTriangle /> </GradientLabel>
             <HeaderData><span>Alert</span> <span>Hard Disk overload</span></HeaderData>
           </CardHeader>
           <CardBody>
@@ -33,9 +33,9 @@ export const Home = () => {
         </Card>
         <Card round>
           <CardHeader>
-            <CardLabel round color={gradient.green}>
+            <GradientLabel round color={gradient.green}>
               <Icon.Check />
-            </CardLabel>
+            </GradientLabel>
             <HeaderData><span>Success</span> <span>Finished tasks</span></HeaderData>
           </CardHeader>
           <CardBody> All daily tasks done!</CardBody>
@@ -52,9 +52,9 @@ export const Home = () => {
         </Card>
         <Card round>
           <CardHeader>
-            <CardLabel round color={gradient.blue}>
+            <GradientLabel round color={gradient.blue}>
               <Icon.Crosshair />
-            </CardLabel>
+            </GradientLabel>
             <HeaderData><span>Target</span> <span>Week goal</span></HeaderData>
           </CardHeader>
           <CardBody>
@@ -75,13 +75,13 @@ export const Home = () => {
       <PageRow number='2'>
         <Card round>
           <CardHeader>
-            <CardLabel round>This space is for a chart</CardLabel>
+            <GradientLabel round>This space is for a chart</GradientLabel>
           </CardHeader>
           <CardBody />
         </Card>
         <Card round>
           <CardHeader>
-            <CardLabel round>This one also</CardLabel>
+            <GradientLabel round>This one also</GradientLabel>
           </CardHeader>
           <CardBody />
         </Card>

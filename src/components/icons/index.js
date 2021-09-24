@@ -13,9 +13,12 @@ import save from '../../assets/icons/save.svg'
 import person from '../../assets/icons/person.svg'
 import icons from '../../assets/icons/icons.svg'
 import magnify from '../../assets/icons/magnify.svg'
+import edit from '../../assets/icons/edit.svg'
+import editinfo from '../../assets/icons/editinfo.svg'
+import clipboard from '../../assets/icons/clipboard.svg'
 
 import { PageBlock, PageRow } from '../../containers/Display'
-import { Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
 import { color, gradient } from '../../colors'
 export const Icons = () => {
   return (
@@ -24,9 +27,9 @@ export const Icons = () => {
         <PageRow>
           <Card round>
             <CardHeader>
-              <CardLabel round color={gradient.blue}>
+              <GradientLabel round color={gradient.blue}>
                 <h1>These icons are prototypes </h1>
-              </CardLabel>
+              </GradientLabel>
               <HeaderData>
                 <span>Crafted by</span>
                 <span>veigacoder</span>
@@ -54,6 +57,27 @@ export const Icons = () => {
                     <img src={duster} alt='duster' width='24px' height='24px' />
                   </ButtonHeader>
                   duster
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
+                    <img src={clipboard} alt='clipboard' width='24px' height='24px' />
+                  </ButtonHeader>
+                  clipboard
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
+                    <img src={edit} alt='edit' width='24px' height='24px' />
+                  </ButtonHeader>
+                  edit
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
+                    <img src={editinfo} alt='editinfo' width='24px' height='24px' />
+                  </ButtonHeader>
+                  editinfo
                 </Button>
 
                 <Button>
