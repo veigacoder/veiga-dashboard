@@ -2,7 +2,7 @@ import { SideBar, SideBarContent, SideBarHeader } from '../../containers/Bars'
 import { Card, CardBody } from '../../containers/Card'
 import * as Icon from 'react-feather'
 import dashboard from '../../assets/icons/dashboard.svg'
-import sandbox2 from '../../assets/icons/sandbox2.svg'
+import icons from '../../assets/icons/icons.svg'
 import person from '../../assets/icons/person.svg'
 import { Button, ButtonHeader, IconButton } from '../../containers/Buttons'
 import { gradient, bg, fg } from '../../colors'
@@ -46,7 +46,7 @@ export const SideAppBar = () => {
           <Link to='/icons' />
           <ButtonHeader>
             <div>
-              <img src={sandbox2} alt='sandbox2' width='24px' height='24px' />
+              <img src={icons} alt='icons' width='24px' height='24px' />
             </div>
           </ButtonHeader>
           Icons
