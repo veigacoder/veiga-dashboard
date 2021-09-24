@@ -8,13 +8,14 @@ import { Button, ButtonHeader, IconButton } from '../../containers/Buttons'
 import { gradient, bg, fg } from '../../colors'
 import { useHistory } from 'react-router'
 import { Link } from 'react-router-dom'
+import { PageBlock } from '../../containers/Display'
 
 export const SideAppBar = () => {
   const history = useHistory()
 
   return (
-    <SideBar>
 
+    <SideBar>
       <SideBarHeader>
         <a href='https://github.com/veigacoder' target='blank_'>
           <b><Icon.GitHub size='20px' strokeWidth='1.5px' />veigacoder</b>
@@ -54,6 +55,7 @@ export const SideAppBar = () => {
 
       </SideBarContent>
     </SideBar>
+
   )
 }
 

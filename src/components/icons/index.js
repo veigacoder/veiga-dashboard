@@ -29,11 +29,11 @@ export const Icons = () => {
               </CardLabel>
               <HeaderData>
                 <span>Crafted by</span>
-                <span>Me</span>
+                <span>veigacoder</span>
               </HeaderData>
             </CardHeader>
             <CardBody>
-              <PageRow number='4'>
+              <PageRow number='4' smNumber='2'>
 
                 <Button>
                   <ButtonHeader>

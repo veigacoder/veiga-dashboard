@@ -8,10 +8,11 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: flex-end;
-background-color: #fff0;
+background-color: #fff0; //invisible
 color: ${props => props.light ? fg.dark : fg.normal};
 z-index: 10;
 `
+
 export const BarContent = styled.div.attrs(props => ({
   columns: props.number || '12'
 }))`
@@ -26,7 +27,7 @@ grid-template-columns: repeat(${props => props.columns}, 1fr);
 `
 export const SideBar = styled.div`
 width: max-content;
-height: 100%;
+height: 1 ;
 display: flex;
 justify-content: flex-start;
 align-items: center;

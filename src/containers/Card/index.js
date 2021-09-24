@@ -10,8 +10,8 @@ position: static;
 flex-direction: column;
 align-items: center;
 color: ${fg.dark};
-width: max-content;
-height: max-content;
+width: 100%;
+height: 100%;
 border-radius: ${props => props.round ? '.5em' : 'none'};
 box-shadow: 0 4px 20px 0 ${bg.translucid};
 `
