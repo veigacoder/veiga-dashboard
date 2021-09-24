@@ -1,17 +1,21 @@
 import React from 'react'
+
 import { Button, ButtonHeader } from '../../containers/Buttons'
 import eye from '../../assets/icons/eye.svg'
 import eyeclosed from '../../assets/icons/eyeclosed.svg'
 import duster from '../../assets/icons/duster.svg'
+import home from '../../assets/icons/home.svg'
 import sandbox from '../../assets/icons/sandbox.svg'
 import sandbox2 from '../../assets/icons/sandbox2.svg'
 import book from '../../assets/icons/book.svg'
 import dashboard from '../../assets/icons/dashboard.svg'
 import save from '../../assets/icons/save.svg'
 import person from '../../assets/icons/person.svg'
+import icons from '../../assets/icons/icons.svg'
+import magnify from '../../assets/icons/magnify.svg'
 
 import { PageBlock, PageRow } from '../../containers/Display'
-import { Card, CardBody, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import { Card, CardBody, CardFooter, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
 import { color, gradient } from '../../colors'
 export const Icons = () => {
   return (
@@ -68,6 +72,34 @@ export const Icons = () => {
 
                 <Button>
                   <ButtonHeader>
+                    <img src={home} alt='home' width='24px' height='24px' />
+                  </ButtonHeader>
+                  home
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
+                    <img src={icons} alt='icons' width='24px' height='24px' />
+                  </ButtonHeader>
+                  icons
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
+                    <img src={magnify} alt='magnify' width='24px' height='24px' />
+                  </ButtonHeader>
+                  magnify
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
+                    <img src={person} alt='save' width='24' height='24' />
+                  </ButtonHeader>
+                  person
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
                     <img src={sandbox} alt='sandbox' width='24px' height='24px' />
                   </ButtonHeader>
                   sandbox
@@ -87,15 +119,17 @@ export const Icons = () => {
                   save
                 </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={person} alt='save' width='24' height='24' />
-                  </ButtonHeader>
-                  person
-                </Button>
-
               </PageRow>
             </CardBody>
+            <CardFooter>
+              <HeaderData>
+                About them, soon, I'll make out a library or something
+                <span>They are not all  I've made ...</span>
+              </HeaderData>
+              <HeaderData>
+                <span><a className='link' href='#/contribute'>Contribute</a></span>
+              </HeaderData>
+            </CardFooter>
           </Card>
         </PageRow>
       </PageBlock>
