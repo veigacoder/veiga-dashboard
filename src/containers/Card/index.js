@@ -81,7 +81,7 @@ display: flex;
 flex-direction: column;
 padding: 1rem 1rem; 
 text-align: right;
-justify-content: flex-end;
+justify-content: flex-start;
 align-items: flex-end;
 color: ${fg.dark};
 font-size: 90%;

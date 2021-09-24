@@ -3,6 +3,7 @@ import { Card, CardBody } from '../../containers/Card'
 import * as Icon from 'react-feather'
 import dashboard from '../../assets/icons/dashboard.svg'
 import sandbox2 from '../../assets/icons/sandbox2.svg'
+import person from '../../assets/icons/person.svg'
 import { Button, ButtonHeader, IconButton } from '../../containers/Buttons'
 import { gradient, bg, fg } from '../../colors'
 import { useHistory } from 'react-router'
@@ -30,6 +31,17 @@ export const SideAppBar = () => {
           </ButtonHeader>
           Dashboard
         </Button>
+
+        <Button onClick={() => history.push('/profile')}>
+          <Link to='/profile' />
+          <ButtonHeader>
+            <div>
+              <img src={person} alt='person' width='24px' height='24px' />
+            </div>
+          </ButtonHeader>
+          Profile
+        </Button>
+
         <Button onClick={() => history.push('/icons')}>
           <Link to='/icons' />
           <ButtonHeader>

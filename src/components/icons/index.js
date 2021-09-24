@@ -11,8 +11,8 @@ import save from '../../assets/icons/save.svg'
 import person from '../../assets/icons/person.svg'
 
 import { PageBlock, PageRow } from '../../containers/Display'
-import { Card, CardBody, CardHeader, CardLabel } from '../../containers/Card'
-import { gradient } from '../../colors'
+import { Card, CardBody, CardHeader, CardLabel, HeaderData } from '../../containers/Card'
+import { color, gradient } from '../../colors'
 export const Icons = () => {
   return (
     <>
@@ -23,72 +23,78 @@ export const Icons = () => {
               <CardLabel round color={gradient.blue}>
                 <h1>These icons are prototypes </h1>
               </CardLabel>
+              <HeaderData>
+                <span>Crafted by</span>
+                <span>Me</span>
+              </HeaderData>
             </CardHeader>
             <CardBody>
+              <PageRow number='4'>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={book} alt='book' width='24' height='24' />
-                </ButtonHeader>
-                book
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={book} alt='book' width='24' height='24' />
+                  </ButtonHeader>
+                  book
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={dashboard} alt='dashboard' width='24' height='24' />
-                </ButtonHeader>
-                dashboard
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={dashboard} alt='dashboard' width='24' height='24' />
+                  </ButtonHeader>
+                  dashboard
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={duster} alt='duster' width='24px' height='24px' />
-                </ButtonHeader>
-                duster
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={duster} alt='duster' width='24px' height='24px' />
+                  </ButtonHeader>
+                  duster
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img className='eye' src={eye} alt='eye' width='24px' height='24px' />
-                </ButtonHeader>
-                eye
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img className='eye' src={eye} alt='eye' width='24px' height='24px' />
+                  </ButtonHeader>
+                  eye
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={eyeclosed} alt='eyeclosed' width='24px' height='24px' />
-                </ButtonHeader>
-                eyeclosed
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={eyeclosed} alt='eyeclosed' width='24px' height='24px' />
+                  </ButtonHeader>
+                  eyeclosed
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={sandbox} alt='sandbox' width='24px' height='24px' />
-                </ButtonHeader>
-                sandbox
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={sandbox} alt='sandbox' width='24px' height='24px' />
+                  </ButtonHeader>
+                  sandbox
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={sandbox2} alt='sandbox2' width='24' height='24' />
-                </ButtonHeader>
-                sandbox2
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={sandbox2} alt='sandbox2' width='24' height='24' />
+                  </ButtonHeader>
+                  sandbox2
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={save} alt='save' width='24' height='24' />
-                </ButtonHeader>
-                save
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={save} alt='save' width='24' height='24' />
+                  </ButtonHeader>
+                  save
+                </Button>
 
-              <Button>
-                <ButtonHeader>
-                  <img src={person} alt='save' width='24' height='24' />
-                </ButtonHeader>
-                person
-              </Button>
+                <Button>
+                  <ButtonHeader>
+                    <img src={person} alt='save' width='24' height='24' />
+                  </ButtonHeader>
+                  person
+                </Button>
 
+              </PageRow>
             </CardBody>
           </Card>
         </PageRow>

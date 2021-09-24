@@ -26,7 +26,6 @@ width: 100%;
 export const PageBlock = styled.div`
 display: flex;
 flex-direction: column;
-contain: content;
 height: 100%;
 background-color: ${bg.light};
 `
@@ -34,7 +33,8 @@ export const PageRow = styled.div.attrs(props => ({
   columns: props.number || '3'
 }))`
 display: grid;
-grid-template-columns: repeat(${props => props.columns},1fr);
+grid-template-columns: repeat(${props => props.columns}, 1fr);
+grid-gap: 1em;
 justify-content: space-between;
 align-items: center;
 padding: 2rem;
