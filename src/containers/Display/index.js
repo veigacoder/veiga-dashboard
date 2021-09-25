@@ -33,11 +33,13 @@ background-color: ${bg.light};
 export const PageRow = styled.div.attrs(props => ({
   columns: props.number || '3',
   mediumDisplay: props.mdNumber || '3',
-  smallDisplay: props.smNumber || '2'
+  smallDisplay: props.smNumber || '2',
+  gap: props.gap || '1em'
 }))`
 display: grid;
 grid-template-columns: repeat(${props => props.columns}, 1fr);
-grid-gap: 1em;
+grid-gap: ${props => props.gap};
+row-gap:${props => props.gap};
 align-items: baseline;
 padding: 1rem;
 height: max-content;
@@ -60,6 +62,7 @@ export const ContainerRow = styled.div.attrs(props => ({
 display: grid;
 grid-template-columns: repeat(${props => props.columns}, 1fr);
 grid-gap: 1em;
+justify-content: baseline;
 align-items: baseline;
 padding: 1rem;
 height: max-content;

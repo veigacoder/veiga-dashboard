@@ -26,28 +26,23 @@ padding: 1rem;
 export const SubmitButton = styled.button.attrs(props => ({
   fontSize: props.size || '1rem'
 }))`
-background-color: ${bg.actionTranslucid};
-color: ${fg.dark};
-display: flex;
-align-items: center;
-text-align: center;
-outline-style: none;
-border: none;
-width: 100%;
-cursor: pointer;
-padding: 1rem;
-font-size: ${props => props.fontSize};
-transition: all 200ms cubic-bezier(.9,.12,.5,.97),
-background-image 400ms cubic-bezier(.9,.12,.5,.97);
-font-weight: 450;
-border-radius: 2rem;
-margin: 0.5em;
-
-
-:hover {
-  background-color: ${bg.creation};
-  box-shadow: 0px 4px 20px ${bg.translucid};
-  z-index: 11;
-}
+  display: flex;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+  border: none;
+  color: ${bg.black};
+  background-color: ${bg.actionTranslucid};
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  :hover{
+    background-color: ${bg.transparent} ;
+    box-shadow: 0px 2px 20px ${bg.translucid};
+  }
 
 `

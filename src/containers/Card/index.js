@@ -14,6 +14,7 @@ width: 100%;
 height: 100%;
 border-radius: ${props => props.round ? '.5em' : 'none'};
 box-shadow: 0 4px 20px 0 ${bg.translucid};
+z-index: 11;
 @media screen and (max-width: 997px) {
   &+& {margin-top: 3rem;}
 }
@@ -72,7 +73,7 @@ justify-content: center;
 padding: 1rem;
 box-shadow: 0px 0px 20px  ${bg.transparent};
 background-image: ${props => props.gradient};
-color: ${fg.normal};
+color: ${bg.light};
 border-radius: ${props => props.round ? '.5em' : 'none'};
 font-size: 90%;
 width: max-content;

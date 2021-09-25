@@ -14,7 +14,7 @@ z-index: 10;
 `
 
 export const BarContent = styled.div.attrs(props => ({
-  columns: props.number || '12'
+  columns: props.number || '1'
 }))`
 justify-content: flex-end;
 direction: rtl;
