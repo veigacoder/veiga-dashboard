@@ -6,7 +6,8 @@ import eyeclosed from '../../assets/icons/eyeclosed.svg'
 import duster from '../../assets/icons/duster.svg'
 import home from '../../assets/icons/home.svg'
 import sandbox from '../../assets/icons/sandbox.svg'
-import sandbox2 from '../../assets/icons/sandbox2.svg'
+import sun from '../../assets/icons/sun.svg'
+import moon from '../../assets/icons/moon.svg'
 import book from '../../assets/icons/book.svg'
 import dashboard from '../../assets/icons/dashboard.svg'
 import save from '../../assets/icons/save.svg'
@@ -20,6 +21,7 @@ import clipboard from '../../assets/icons/clipboard.svg'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
 import { color, gradient } from '../../colors'
+
 export const Icons = () => {
   return (
     <>
@@ -47,6 +49,13 @@ export const Icons = () => {
 
                 <Button>
                   <ButtonHeader>
+                    <img src={clipboard} alt='clipboard' width='24px' height='24px' />
+                  </ButtonHeader>
+                  clipboard
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
                     <img src={dashboard} alt='dashboard' width='24' height='24' />
                   </ButtonHeader>
                   dashboard
@@ -57,13 +66,6 @@ export const Icons = () => {
                     <img src={duster} alt='duster' width='24px' height='24px' />
                   </ButtonHeader>
                   duster
-                </Button>
-
-                <Button>
-                  <ButtonHeader>
-                    <img src={clipboard} alt='clipboard' width='24px' height='24px' />
-                  </ButtonHeader>
-                  clipboard
                 </Button>
 
                 <Button>
@@ -117,6 +119,13 @@ export const Icons = () => {
 
                 <Button>
                   <ButtonHeader>
+                    <img src={moon} alt='moon' width='24px' height='24px' />
+                  </ButtonHeader>
+                  moon
+                </Button>
+
+                <Button>
+                  <ButtonHeader>
                     <img src={person} alt='save' width='24' height='24' />
                   </ButtonHeader>
                   person
@@ -131,9 +140,9 @@ export const Icons = () => {
 
                 <Button>
                   <ButtonHeader>
-                    <img src={sandbox2} alt='sandbox2' width='24' height='24' />
+                    <img src={sun} alt='sun' width='24' height='24' />
                   </ButtonHeader>
-                  sandbox2
+                  sun
                 </Button>
 
                 <Button>
