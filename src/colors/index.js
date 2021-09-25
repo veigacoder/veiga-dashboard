@@ -9,7 +9,8 @@ export const bg = {
   actionTranslucid: '#326DB344',
   action: '#326DB3',
   toAction: '#4274B1',
-  creation: '#91C3BE'
+  creation: '#91C3BE',
+  black: '#0c0c0c'
 }
 
 export const fg = {
