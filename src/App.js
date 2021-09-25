@@ -27,6 +27,9 @@ export const App = () => {
             <Route sensitive path='/profile' component={Profile} exact><Profile /></Route>
             <Redirect to='/' exact />
           </Switch>
+          <DisplayTop>
+            <AppBar />
+          </DisplayTop>
         </DisplayBody>
 
       </Display>

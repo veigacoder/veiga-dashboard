@@ -26,27 +26,28 @@ export const Profile = () => {
         <Card round>
           <CardHeader>
             <GradientLabel color={gradient.creation} round>
-              <h1> Username</h1>
+              <h1> User</h1>
             </GradientLabel>
             <HeaderData>
-              <span>Unfinished area</span>
-              <span><a className='creation'>User Profile</a></span>
+              <span />
+              <span><a className='creation'>Profile</a></span>
             </HeaderData>
           </CardHeader>
-          <CardBody>
-            <form>
-              <UserFormulary />
-            </form>
-          </CardBody>
-          <CardFooter>
-            <SubmitButton>
-              <ButtonHeader>
-                <img src={save} alt='save' width='24' height='24' />
-              </ButtonHeader>
-              Update profile!
-            </SubmitButton>
 
-          </CardFooter>
+          <CardBody>
+            <UserFormulary />
+          </CardBody>
+
+          <CardBody>
+            <HeaderData>
+              <SubmitButton>
+                <ButtonHeader>
+                  <img src={save} alt='save' width='24' height='24' />
+                </ButtonHeader>
+                Update profile!
+              </SubmitButton>
+            </HeaderData>
+          </CardBody>
         </Card>
 
       </PageRow>
