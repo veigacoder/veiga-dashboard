@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
-import duster from '../../assets/icons/duster.svg'
+import edit from '../../assets/icons/edit.svg'
 import eye from '../../assets/icons/eye.svg'
 import book from '../../assets/icons/book.svg'
+import check from '../../assets/icons/check.svg'
+import no from '../../assets/icons/no.svg'
+import target from '../../assets/icons/target.svg'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { bg, color, fg, gradient } from '../../colors'
 import * as Icon from 'react-feather'
@@ -55,31 +58,43 @@ export const Home = () => {
       <PageRow>
         <Card round>
           <CardHeader>
-            <GradientLabel round color={gradient.red}><Icon.AlertTriangle /> </GradientLabel>
-            <HeaderData><span>Alert</span> <span>Hard Disk overload</span></HeaderData>
+            <GradientLabel round color={gradient.red}>
+              <div>
+                <img src={no} alt='no' width='24px' height='24px' />
+              </div>
+            </GradientLabel>
+            <HeaderData>
+              <span> Alert</span>
+              <span>You have a pending report</span>
+            </HeaderData>
           </CardHeader>
           <CardBody>
-            <span><a className='alert'>97% </a>Disk Usage</span>
+            <span><a className='alert'>5 days </a> until delivery day</span>
           </CardBody>
           <CardFooter>
             <Button>
               <ButtonHeader>
                 <div>
-                  <img src={duster} alt='duster' width='24px' height='24px' />
+                  <img src={edit} alt='edit' width='24px' height='24px' />
                 </div>
               </ButtonHeader>
-              Clean up space
+              Start writing
             </Button>
           </CardFooter>
         </Card>
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.green}>
-              <Icon.Check />
+              <div>
+                <img src={check} alt='check' width='24px' height='24px' />
+              </div>
             </GradientLabel>
-            <HeaderData><span>Success</span> <span>Finished tasks</span></HeaderData>
+            <HeaderData>
+              <span>Success</span>
+              <span>Finished tasks</span>
+            </HeaderData>
           </CardHeader>
-          <CardBody> All daily tasks done!</CardBody>
+          <CardBody> All day tasks done!</CardBody>
           <CardFooter>
             <Button>
               <ButtonHeader>
@@ -94,9 +109,14 @@ export const Home = () => {
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.blue}>
-              <Icon.Crosshair />
+              <div>
+                <img src={target} alt='target' width='24px' height='24px' />
+              </div>
             </GradientLabel>
-            <HeaderData><span>Target</span> <span>Week goal</span></HeaderData>
+            <HeaderData>
+              <span>Target</span>
+              <span>Week goal</span>
+            </HeaderData>
           </CardHeader>
           <CardBody>
             <span><a className='goal'>+25% </a>accomplishment rate to reach</span>
