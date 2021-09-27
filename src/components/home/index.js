@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
-import edit from '../../assets/icons/edit.svg'
-import eye from '../../assets/icons/eye.svg'
-import book from '../../assets/icons/book.svg'
-import check from '../../assets/icons/check.svg'
-import no from '../../assets/icons/no.svg'
-import target from '../../assets/icons/target.svg'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { bg, color, fg, gradient } from '../../colors'
-import * as Icon from 'react-feather'
 import { descendo, crescendo } from '../../assets/chartdata/precision'
 import { BarChart, LineChart } from '../../containers/Charts'
+import * as Icon from '../../assets/icons'
 
 export const Home = () => {
   useEffect(() => {
@@ -22,13 +16,13 @@ export const Home = () => {
           {
             label: 'Rate',
             data: descendo.sort().map((data) => data.taxa),
-            color: bg.dark,
-            backgroundColor: bg.platinum,
-            borderColor: bg.actionTranslucid
+            color: bg.platinum,
+            backgroundColor: bg.platinum
           }
         ]
       })
     }
+
     const fetchData2 = () => {
       setChartData2({
         labels: crescendo.sort().map((data) => data.name),
@@ -36,14 +30,14 @@ export const Home = () => {
           {
             label: 'Rate',
             data: crescendo.sort().map((data) => data.taxa),
-            color: bg.black,
+            color: bg.darkest,
             backgroundColor: bg.platinum,
-            borderColor: bg.black
+            borderColor: bg.platinum
           }
         ]
       })
     }
-
+    console.log(Icon)
     setTimeout(() => {
       fetchData1()
       fetchData2()
@@ -59,9 +53,7 @@ export const Home = () => {
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.red}>
-              <div>
-                <img src={no} alt='no' width='24px' height='24px' />
-              </div>
+              <Icon.No />
             </GradientLabel>
             <HeaderData>
               <span> Alert</span>
@@ -71,23 +63,21 @@ export const Home = () => {
           <CardBody>
             <span><a className='alert'>5 days </a> until delivery day</span>
           </CardBody>
+
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <div>
-                  <img src={edit} alt='edit' width='24px' height='24px' />
-                </div>
+                <Icon.Edit />
               </ButtonHeader>
               Start writing
             </Button>
           </CardFooter>
         </Card>
+
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.green}>
-              <div>
-                <img src={check} alt='check' width='24px' height='24px' />
-              </div>
+              <Icon.Check />
             </GradientLabel>
             <HeaderData>
               <span>Success</span>
@@ -98,20 +88,17 @@ export const Home = () => {
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <div>
-                  <img src={eye} alt='eye' width='24px' height='24px' />
-                </div>
+                <Icon.Eye />
               </ButtonHeader>
               See all
             </Button>
           </CardFooter>
         </Card>
+
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.blue}>
-              <div>
-                <img src={target} alt='target' width='24px' height='24px' />
-              </div>
+              <Icon.Target />
             </GradientLabel>
             <HeaderData>
               <span>Target</span>
@@ -124,9 +111,7 @@ export const Home = () => {
           <CardFooter>
             <Button>
               <ButtonHeader>
-                <div>
-                  <img src={book} alt='book' width='24px' height='24px' />
-                </div>
+                <Icon.Book />
               </ButtonHeader>
               Lean More
             </Button>

@@ -1,16 +1,16 @@
 export const bg = {
-  darkest: '#143660',
-  dark: '#21528F',
-  normal: '#757575',
-  light: '#CACACA',
+  darkest: '#0C0C0C',
+  dark: '#1C1C1C',
+  normal: '#2C2C2C',
+  light: '#D0D0D0',
   platinum: '#E5E5E5',
   translucid: '#1C1D2177',
   transparent: '#326DB322',
+  noColor: '#fff00',
   actionTranslucid: '#326DB344',
-  action: '#326DB3',
+  action: '#31333F',
   toAction: '#4274B1',
-  creation: '#91C3BE',
-  black: '#0c0c0c'
+  creation: '#80C3BC'
 }
 
 export const fg = {
@@ -29,7 +29,7 @@ export const gradient = {
   red: 'linear-gradient(45deg, #C62F2F, #B63535)',
   green: 'linear-gradient(45deg, #41D246, #26BF2B )',
   blue: 'linear-gradient(45deg, #2962FF, #1855FE)',
-  creation: 'linear-gradient(45deg, #91C3BE, #77A4A0)',
+  creation: 'linear-gradient(45deg, #80C3BC, #6AA39D)',
   default: 'linear-gradient(45deg, #151515, #1C1D21)',
   noColor: 'linear-gradient(45deg, #15151500, #1C1D2100)'
 

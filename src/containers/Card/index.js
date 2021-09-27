@@ -6,7 +6,6 @@ export const Card = styled.div.attrs(props => ({
 }))`
 background-color: ${props => props.color};
 display: flex;
-position: static;
 flex-direction: column;
 align-items: center;
 color: ${fg.dark};
@@ -14,47 +13,41 @@ width: 100%;
 height: 100%;
 border-radius: ${props => props.round ? '.5em' : 'none'};
 box-shadow: 0 4px 20px 0 ${bg.translucid};
-z-index: 11;
+z-index: 15;
+transition: all 250ms ease;
+max-height: 100%;
 @media screen and (max-width: 997px) {
   &+& {margin-top: 3rem;}
-}
+};
 
 @media screen and (max-width: 800px) {
   &+& {margin-top: 3rem;}
-}
-`
-export const Bag = styled.div.attrs(props => ({
-  color: props.color || bg.platinum
-}))`
-background-color: ${props => props.color};
-display: flex;
-position: static;
-flex-direction: column;
-align-items: center;
-color:  ${fg.dark} ;
-width: available;
-height: max-content;
-border-radius: ${props => props.round ? '.5em' : 'none'};
-box-shadow: 0 4px 20px 0 ${bg.translucid};
+};
 `
 
-export const CardBody = styled.div`
+export const CardBody = styled.div.attrs(props => ({
+
+}))`
 justify-content: center;
+position: static;
 align-items: center;
 display: flex;
 padding: 1rem;
-height: fit-content;
 border-radius: inherit;
 flex-wrap: wrap;
+height: 100%;
+max-height: 100%;
+transition: all 250ms ease;
 `
 export const CardHeader = styled.div.attrs(props => ({
   border: props.border || 'none'
 }))`
 display: flex;
 width: 1;
-height: fitcontent;
+height: fit-content;
 border-radius: inherit;
-border: ${props => props.border}
+border: ${props => props.border};
+align-items: flex-start;
 `
 export const CardFooter = styled.div`
 justify-content: center;
@@ -73,7 +66,7 @@ justify-content: center;
 padding: 1rem;
 box-shadow: 0px 0px 20px  ${bg.transparent};
 background-image: ${props => props.gradient};
-color: ${bg.light};
+color: ${bg.platinum};
 border-radius: ${props => props.round ? '.5em' : 'none'};
 font-size: 90%;
 width: max-content;
@@ -111,7 +104,7 @@ padding: 1rem 1rem;
 text-align: right;
 justify-content: flex-start;
 align-items: flex-end;
-color: ${fg.dark};
+color: inherit;
 font-size: 90%;
 width:100%;
 position: relative;
@@ -121,7 +114,8 @@ z-index: 3;
   font-size: 16px;
 }
 &>span+span {
-  color: ${bg.dark};
+  color: ${bg.action};
   font-size: 20px;
+  font-weight: 500;
 }
 `

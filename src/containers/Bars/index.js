@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { bg, fg, color } from '../../colors'
 
-export const Bar = styled.div`
+export const Bar = styled.div.attrs(props => ({
+  orientation: props.direction || 'flex-end'
+}))`
 width: 100%;
 height: max-content;
 display: flex;
@@ -9,15 +11,16 @@ flex-direction: row;
 align-items: center;
 justify-content: flex-end;
 background-color: #fff0; //invisible
-color: ${props => props.light ? fg.dark : fg.normal};
+color: ${props => props.light ? fg.normal : fg.dark};
 z-index: 10;
 `
 
 export const BarContent = styled.div.attrs(props => ({
-  columns: props.number || '1'
+  columns: props.number || '1',
+  direction: props.direction || 'ltr'
 }))`
-justify-content: flex-end;
-direction: rtl;
+justify-content: ${props => props.orientation};
+direction: ${props => props.direction};
 height: max-content;
 width: 100%;
 padding: .7rem;

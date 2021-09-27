@@ -1,173 +1,245 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
-import eye from '../../assets/icons/eye.svg'
-import eyeclosed from '../../assets/icons/eyeclosed.svg'
-import duster from '../../assets/icons/duster.svg'
-import home from '../../assets/icons/home.svg'
-import sandbox from '../../assets/icons/sandbox.svg'
-import sun from '../../assets/icons/sun.svg'
-import moon from '../../assets/icons/moon.svg'
-import book from '../../assets/icons/book.svg'
-import dashboard from '../../assets/icons/dashboard.svg'
-import save from '../../assets/icons/save.svg'
-import person from '../../assets/icons/person.svg'
-import icons from '../../assets/icons/icons.svg'
-import magnify from '../../assets/icons/magnify.svg'
-import edit from '../../assets/icons/edit.svg'
-import editinfo from '../../assets/icons/editinfo.svg'
-import clipboard from '../../assets/icons/clipboard.svg'
-
+import * as Icon from '../../assets/icons'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
 import { color, gradient } from '../../colors'
+import { Input, ColorInput } from '../../containers/Formulary'
 
 export const Icons = () => {
+  const [view, setView] = useState('6')
+  const [inputData, setInputData] = useState('24')
+  const [iconColor, setIconColor] = useState('inherit')
+
+  const toggleGrid = () => {
+    if (view < '6') { setView('6') }
+  }
+  const toggleList = () => {
+    if (view > '2') { setView('2') }
+  }
+
+  const getInputData = (e) => {
+    setInputData(e.target.value)
+    if (e.target.value <= 9) (setInputData('10'))
+    console.log(e.target.value)
+  }
+  const getInputColor = (e) => {
+    setIconColor(e.target.value)
+  }
+
+  const resetSize = (e) => {
+    setInputData('24')
+  }
+
   return (
-    <>
-      <PageBlock>
-        <PageRow>
-          <Card round>
-            <CardHeader>
-              <GradientLabel round color={gradient.blue}>
-                <h1>These icons are prototypes </h1>
-              </GradientLabel>
-              <HeaderData>
-                <span>Crafted by</span>
-                <span>veigacoder</span>
-              </HeaderData>
-            </CardHeader>
-            <CardBody>
-              <PageRow number='4' smNumber='2'>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={book} alt='book' width='24' height='24' />
-                  </ButtonHeader>
-                  book
-                </Button>
+    <PageBlock>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={clipboard} alt='clipboard' width='24px' height='24px' />
-                  </ButtonHeader>
-                  clipboard
-                </Button>
+      <PageRow>
+        <Card round minWidth='60rem'>
+          <CardHeader>
+            <GradientLabel round color={gradient.blue}>
+              <h1>These icons are prototypes </h1>
+            </GradientLabel>
+            <HeaderData>
+              <span>Crafted by</span>
+              <span>veigacoder</span>
+            </HeaderData>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={dashboard} alt='dashboard' width='24' height='24' />
-                  </ButtonHeader>
-                  dashboard
-                </Button>
+          </CardHeader>
+          <CardHeader>
+            <Button onClick={toggleGrid} title='Grid View'>
+              <Icon.Grid />
+            </Button>
+            <Button onClick={toggleList} title='List View'>
+              <Icon.List />
+            </Button>
+          </CardHeader>
+          <CardHeader>
+            <Card round>
+              <CardBody>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={duster} alt='duster' width='24px' height='24px' />
-                  </ButtonHeader>
-                  duster
-                </Button>
+                <Input placeholder='Size' onChange={getInputData} type='range' />
+                <ColorInput placeholder='Size' onChange={getInputColor} type='color' />
+                <label for={inputData}>{inputData}px</label>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={edit} alt='edit' width='24px' height='24px' />
-                  </ButtonHeader>
-                  edit
-                </Button>
+              </CardBody>
+              <CardFooter>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={editinfo} alt='editinfo' width='24px' height='24px' />
-                  </ButtonHeader>
-                  editinfo
-                </Button>
+                <Icon.Edit size={inputData} color={iconColor} />
 
-                <Button>
-                  <ButtonHeader>
-                    <img className='eye' src={eye} alt='eye' width='24px' height='24px' />
-                  </ButtonHeader>
-                  eye
-                </Button>
+              </CardFooter>
+            </Card>
+          </CardHeader>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={eyeclosed} alt='eyeclosed' width='24px' height='24px' />
-                  </ButtonHeader>
-                  eyeclosed
-                </Button>
+          <CardBody>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={home} alt='home' width='24px' height='24px' />
-                  </ButtonHeader>
-                  home
-                </Button>
+            <PageRow number={view} smNumber='2'>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={icons} alt='icons' width='24px' height='24px' />
-                  </ButtonHeader>
-                  icons
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                Book
+              </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={magnify} alt='magnify' width='24px' height='24px' />
-                  </ButtonHeader>
-                  magnify
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Check />
+                </ButtonHeader>
+                Check
+              </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={moon} alt='moon' width='24px' height='24px' />
-                  </ButtonHeader>
-                  moon
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.No />
+                </ButtonHeader>
+                No
+              </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={person} alt='save' width='24' height='24' />
-                  </ButtonHeader>
-                  person
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Clipboard />
+                </ButtonHeader>
+                Clipboard
+              </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={sandbox} alt='sandbox' width='24px' height='24px' />
-                  </ButtonHeader>
-                  sandbox
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Dashboard />
+                </ButtonHeader>
+                Dashboard
+              </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={sun} alt='sun' width='24' height='24' />
-                  </ButtonHeader>
-                  sun
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Duster />
+                </ButtonHeader>
+                Duster
+              </Button>
 
-                <Button>
-                  <ButtonHeader>
-                    <img src={save} alt='save' width='24' height='24' />
-                  </ButtonHeader>
-                  save
-                </Button>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Edit />
+                </ButtonHeader>
+                Edit
+              </Button>
 
-              </PageRow>
-            </CardBody>
-            <CardFooter>
-              <HeaderData>
-                About them, soon, I'll make out a library or something
-                <span>They are not all  I've made ...</span>
-              </HeaderData>
-              <HeaderData>
-                <span><a className='link' href='#/contribute'>Contribute</a></span>
-              </HeaderData>
-            </CardFooter>
-          </Card>
-        </PageRow>
-      </PageBlock>
+              <Button>
+                <ButtonHeader>
+                  <Icon.EditInfo />
+                </ButtonHeader>
+                EditInfo
+              </Button>
 
-    </>
+              <Button>
+                <ButtonHeader>
+                  <Icon.Eye />
+                </ButtonHeader>
+                Eye
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.EyeClosed />
+                </ButtonHeader>
+                EyeClosed
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                home
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                icons
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                magnify
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                moon
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                person
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                sandbox
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                sun
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Book />
+                </ButtonHeader>
+                save
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Zoom />
+                </ButtonHeader>
+                Zoom
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.ZoomIn />
+                </ButtonHeader>
+                ZoomIn
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.ZoomOut />
+                </ButtonHeader>
+                ZoomOut
+              </Button>
+
+            </PageRow>
+          </CardBody>
+
+          <CardFooter>
+            <HeaderData>
+              About them, soon, I'll make out a library or something
+              <span>They are not all  I've made ...</span>
+            </HeaderData>
+            <HeaderData>
+              <span><a className='link' href='#/contribute'>Contribute</a></span>
+            </HeaderData>
+          </CardFooter>
+        </Card>
+      </PageRow>
+
+    </PageBlock>
+
   )
 }
 export default Icons

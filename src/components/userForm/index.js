@@ -1,14 +1,13 @@
 import React from 'react'
 import { Form, Input } from '../../containers/Formulary'
 import { Card, ColorLabel, GradientLabel, CardHeader, HeaderData } from '../../containers/Card'
-import editinfo from '../../assets/icons/editinfo.svg'
 import { bg, gradient } from '../../colors'
 export const UserFormulary = () => {
   return (
     <Card round>
       <CardHeader>
         <ColorLabel round color={bg.creation}>
-          <img src={editinfo} alt='clipboard' width='40' height='40' />
+          
         </ColorLabel>
         <HeaderData>
           <span>Edit you profile info</span>

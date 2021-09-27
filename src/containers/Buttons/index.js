@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { bg, fg } from '../../colors'
+import { bg, color, fg } from '../../colors'
 
 export const Button = styled.button.attrs(props => ({
   fontSize: props.size || '1rem'
@@ -17,7 +17,7 @@ padding: 1rem;
 font-size: ${props => props.fontSize};
 transition: all 200ms cubic-bezier(.9,.12,.5,.97);
 font-weight: 450;
-border-radius: 2rem;
+border-radius: 30px 30px 10px 30px;
 margin: 0.5em;
 
 
@@ -36,6 +36,7 @@ width: max-content;
 cursor: pointer;
 margin-right: 1rem;
 height: 100%;
+color: ${bg.action};
 `
 
 export const BarButton = styled.button.attrs(props => ({

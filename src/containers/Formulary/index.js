@@ -8,11 +8,25 @@ border-radius: 50px;
 color: ${fg.dark};
 background-color: ${bg.transparent};
 padding: 1rem;
+height: max-content;
+align-self: center;
 :disabled {
   background-color: ${bg.light};
   color: ${bg.platinum};
   cursor: not-allowed;
 }
+range: {
+  color:bg.action;
+};
+`
+
+export const ColorInput = styled.input`
+border-style: none;
+outline-style: none ;
+height: 2rem;
+width: 50%;
+align-self: center;
+
 `
 export const Form = styled.form.attrs(props => ({
   columns: props.number || '2'

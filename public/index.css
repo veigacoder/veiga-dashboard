@@ -7,10 +7,12 @@
   -webkit-font-smoothing: antialiased;
   
 }
+#root {
+height: max-content;
+}
 
 html {
-  
-  height: 100vh;
+  height:100%;
 }
 
 .body {
@@ -46,6 +48,7 @@ a.link {
 a.link:hover{
   text-decoration: none;
   color: #1C1D2177;
+  cursor: pointer;
 }
 
 a.alert {
@@ -67,3 +70,7 @@ span>a.creation{
   font-weight: inherit;
 }
 
+.page-row-enter{
+  grid-template-columns: repeat(6, 1fr);
+  transition: 200ms ease;
+}

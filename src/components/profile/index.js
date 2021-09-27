@@ -3,7 +3,6 @@ import { color, gradient, bg } from '../../colors'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
 import { PageBlock, PageRow } from '../../containers/Display'
 import { Button, ButtonHeader } from '../../containers/Buttons'
-import save from '../../assets/icons/save.svg'
 import { UserFormulary } from '..'
 import { SubmitButton } from '../../containers/Formulary'
 
@@ -42,7 +41,7 @@ export const Profile = () => {
             <HeaderData>
               <SubmitButton>
                 <ButtonHeader>
-                  <img src={save} alt='save' width='24' height='24' />
+                  
                 </ButtonHeader>
                 Update profile!
               </SubmitButton>
