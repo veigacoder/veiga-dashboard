@@ -49,13 +49,27 @@ border-radius: inherit;
 border: ${props => props.border};
 align-items: flex-start;
 `
-export const CardFooter = styled.div`
+export const CardSide = styled.div.attrs(props => ({
+
+}))`
+display: flex;
+width: max-content;
+height: 100%;
+border-radius: inherit;
+padding: .5rem;
+border-left: .1px dashed ${bg.actionTranslucid};
+align-items: flex-start;
+`
+export const CardFooter = styled.div.attrs(props => ({
+  minHeight: props.minHeight || 'max-content',
+  minWidth: props.minWidth || '80%'
+}))`
 justify-content: center;
 align-items: center;
 display: flex;
 padding: .5rem;
-width: 80%;
-height: max-content;
+width: ${props => props.minWidth};
+height: ${props => props.minHeight};
 border-top: .1px dashed ${bg.actionTranslucid};
 `
 export const GradientLabel = styled.div.attrs(props => ({

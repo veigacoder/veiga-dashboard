@@ -9,7 +9,7 @@ import { Input, ColorInput } from '../../containers/Formulary'
 export const Icons = () => {
   const [view, setView] = useState('6')
   const [inputData, setInputData] = useState('24')
-  const [iconColor, setIconColor] = useState('inherit')
+  const [iconColor, setIconColor] = useState('#1C1C1C')
 
   const toggleGrid = () => {
     if (view < '6') { setView('6') }
@@ -35,8 +35,9 @@ export const Icons = () => {
 
     <PageBlock>
 
-      <PageRow>
+      <PageRow number='2'>
         <Card round minWidth='60rem'>
+
           <CardHeader>
             <GradientLabel round color={gradient.blue}>
               <h1>These icons are prototypes </h1>
@@ -45,8 +46,8 @@ export const Icons = () => {
               <span>Crafted by</span>
               <span>veigacoder</span>
             </HeaderData>
-
           </CardHeader>
+
           <CardHeader>
             <Button onClick={toggleGrid} title='Grid View'>
               <Icon.Grid />
@@ -55,27 +56,21 @@ export const Icons = () => {
               <Icon.List />
             </Button>
           </CardHeader>
+
           <CardHeader>
             <Card round>
               <CardBody>
-
                 <Input placeholder='Size' onChange={getInputData} type='range' />
-                <ColorInput placeholder='Size' onChange={getInputColor} type='color' />
+                <ColorInput placeholder='Size' onChange={getInputColor} type='color' value='#1C1C1C' />
                 <label for={inputData}>{inputData}px</label>
-
               </CardBody>
               <CardFooter>
-
                 <Icon.Edit size={inputData} color={iconColor} />
-
               </CardFooter>
             </Card>
           </CardHeader>
-
           <CardBody>
-
             <PageRow number={view} smNumber='2'>
-
               <Button>
                 <ButtonHeader>
                   <Icon.Book />
@@ -222,7 +217,6 @@ export const Icons = () => {
                 </ButtonHeader>
                 ZoomOut
               </Button>
-
             </PageRow>
           </CardBody>
 
@@ -236,6 +230,7 @@ export const Icons = () => {
             </HeaderData>
           </CardFooter>
         </Card>
+
       </PageRow>
 
     </PageBlock>

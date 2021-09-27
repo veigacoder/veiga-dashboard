@@ -15,16 +15,12 @@ export const AppBar = () => {
             <BarButton
               title='Dashboard'
               onClick={() => history.push('/')}
-            >
-            </BarButton>
-            <BarButton>
-            </BarButton>
+            />
+            <BarButton />
 
-            <BarButton>
-            </BarButton>
+            <BarButton />
 
-            <BarButton>
-            </BarButton>
+            <BarButton />
           </PageRow>
 
         </Card>
