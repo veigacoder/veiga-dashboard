@@ -1,13 +1,28 @@
-import { Route, Switch, Redirect, BrowserRouter as Router, useLocation } from 'react-router-dom'
+import {
+  Route,
+  Switch,
+  Redirect,
+  BrowserRouter as Router
+} from 'react-router-dom'
+
 import React from 'react'
+
 import {
   AppBar,
+  FooterAppBar,
   Home,
+  Icons,
   Profile,
-  SideAppBar,
-  Icons
+  SideAppBar
 } from './components'
-import { Display, DisplayBody, DisplaySide, DisplayTop, PageBlock } from './containers/Display'
+
+import {
+  Display,
+  DisplayBody,
+  DisplayBottom,
+  DisplaySide,
+  DisplayTop
+} from './containers/Display'
 
 export const App = () => {
   return (
@@ -27,13 +42,12 @@ export const App = () => {
             <Route sensitive path='/profile' component={Profile} exact><Profile /></Route>
             <Redirect to='/' exact />
           </Switch>
-          <DisplayTop>
-            <AppBar />
-          </DisplayTop>
+          <DisplayBottom>
+            <FooterAppBar />
+          </DisplayBottom>
         </DisplayBody>
 
       </Display>
-
     </Router>
 
   )
