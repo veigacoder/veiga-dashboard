@@ -1,21 +1,17 @@
 {
   "files": {
-    "main.js": "/veiga-dashboard/static/js/main.fb5c8e58.chunk.js",
-    "main.js.map": "/veiga-dashboard/static/js/main.fb5c8e58.chunk.js.map",
+    "main.js": "/veiga-dashboard/static/js/main.b1f2ea7d.chunk.js",
+    "main.js.map": "/veiga-dashboard/static/js/main.b1f2ea7d.chunk.js.map",
     "runtime-main.js": "/veiga-dashboard/static/js/runtime-main.d2316241.js",
     "runtime-main.js.map": "/veiga-dashboard/static/js/runtime-main.d2316241.js.map",
-    "static/js/2.39ca1716.chunk.js": "/veiga-dashboard/static/js/2.39ca1716.chunk.js",
-    "static/js/2.39ca1716.chunk.js.map": "/veiga-dashboard/static/js/2.39ca1716.chunk.js.map",
+    "static/js/2.de84ebfe.chunk.js": "/veiga-dashboard/static/js/2.de84ebfe.chunk.js",
+    "static/js/2.de84ebfe.chunk.js.map": "/veiga-dashboard/static/js/2.de84ebfe.chunk.js.map",
     "index.html": "/veiga-dashboard/index.html",
-    "static/js/2.39ca1716.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.39ca1716.chunk.js.LICENSE.txt",
-    "static/media/dashboard.68e1e196.svg": "/veiga-dashboard/static/media/dashboard.68e1e196.svg",
-    "static/media/grid.cb0ffa82.svg": "/veiga-dashboard/static/media/grid.cb0ffa82.svg",
-    "static/media/person.12af9263.svg": "/veiga-dashboard/static/media/person.12af9263.svg",
-    "static/media/sun.99501bc9.svg": "/veiga-dashboard/static/media/sun.99501bc9.svg"
+    "static/js/2.de84ebfe.chunk.js.LICENSE.txt": "/veiga-dashboard/static/js/2.de84ebfe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d2316241.js",
-    "static/js/2.39ca1716.chunk.js",
-    "static/js/main.fb5c8e58.chunk.js"
+    "static/js/2.de84ebfe.chunk.js",
+    "static/js/main.b1f2ea7d.chunk.js"
   ]
 }
