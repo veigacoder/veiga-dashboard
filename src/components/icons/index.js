@@ -27,10 +27,6 @@ export const Icons = () => {
     setIconColor(e.target.value)
   }
 
-  const resetSize = (e) => {
-    setInputData('24')
-  }
-
   return (
 
     <PageBlock>
@@ -87,13 +83,6 @@ export const Icons = () => {
 
               <Button>
                 <ButtonHeader>
-                  <Icon.No />
-                </ButtonHeader>
-                No
-              </Button>
-
-              <Button>
-                <ButtonHeader>
                   <Icon.Clipboard />
                 </ButtonHeader>
                 Clipboard
@@ -143,58 +132,65 @@ export const Icons = () => {
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Heart />
                 </ButtonHeader>
-                home
+                Heart
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Home />
                 </ButtonHeader>
-                icons
+                Home
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Icons />
                 </ButtonHeader>
-                magnify
+                Icons
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Moon />
                 </ButtonHeader>
-                moon
+                Moon
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.No />
                 </ButtonHeader>
-                person
+                No
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Person />
                 </ButtonHeader>
-                sandbox
+                Person
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Sandbox />
                 </ButtonHeader>
-                sun
+                Sandbox
               </Button>
 
               <Button>
                 <ButtonHeader>
-                  <Icon.Book />
+                  <Icon.Sun />
                 </ButtonHeader>
-                save
+                Sun
+              </Button>
+
+              <Button>
+                <ButtonHeader>
+                  <Icon.Save />
+                </ButtonHeader>
+                Save
               </Button>
 
               <Button>
@@ -222,8 +218,8 @@ export const Icons = () => {
 
           <CardFooter>
             <HeaderData>
-              About them, soon, I'll make out a library or something
-              <span>They are not all  I've made ...</span>
+              About them,
+              <span>they're ones I've done so far...</span>
             </HeaderData>
             <HeaderData>
               <span><a className='link' href='#/contribute'>Contribute</a></span>

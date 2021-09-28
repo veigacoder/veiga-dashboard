@@ -1,10 +1,9 @@
 import { SideBar, SideBarContent, SideBarHeader } from '../../containers/Bars'
 import { Card, CardBody } from '../../containers/Card'
 import { Button, ButtonHeader, IconButton } from '../../containers/Buttons'
-import { gradient, bg, fg } from '../../colors'
+import * as Icon from '../../assets/icons'
 import { useHistory } from 'react-router'
-import { Link } from 'react-router-dom'
-import { PageBlock } from '../../containers/Display'
+import { Icons } from '../../assets/icons'
 
 export const SideAppBar = () => {
   const history = useHistory()
@@ -21,25 +20,21 @@ export const SideAppBar = () => {
 
         <Button onClick={() => history.push('/')}>
           <ButtonHeader>
-            <div>
-            </div>
+            <Icon.Dashboard />
           </ButtonHeader>
           Dashboard
         </Button>
 
         <Button onClick={() => history.push('/profile')}>
           <ButtonHeader>
-            <div>
-            </div>
+            <Icon.Person />
           </ButtonHeader>
           Profile
         </Button>
 
         <Button onClick={() => history.push('/icons')}>
-          <Link to='/icons' />
           <ButtonHeader>
-            <div>
-            </div>
+            <Icon.Icons />
           </ButtonHeader>
           Icons
         </Button>

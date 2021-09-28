@@ -10,7 +10,8 @@ export const FooterAppBar = () => {
           <CardBody>
             <span>
               Hope you liked this web site experience.<br />
-              {new Date().getFullYear()}, from <Icon.Heart /> by <a className='link  '> veigacoder </a>
+              From <Icon.Heart size='14' /> by <a className='link  '> veigacoder </a> <br />
+              {new Date().getFullYear()}
             </span>
           </CardBody>
         </Card>
