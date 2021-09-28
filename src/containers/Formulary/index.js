@@ -18,6 +18,11 @@ align-self: center;
   color: ${bg.platinum};
   cursor: not-allowed;
 }
+:focus-visible{
+background-color: ${bg.normal};
+color: ${fg.normal};
+
+}
 
 `
 
@@ -34,9 +39,9 @@ export const Form = styled.form.attrs(props => ({
 }))`
 display: grid;
 grid-template-columns: repeat(${props => props.columns}, 2fr);
-grid-gap: 1em;
+grid-gap: 2em;
 border-radius: 50px;
-padding: 1rem;
+
 `
 export const SubmitButton = styled.button.attrs(props => ({
   fontSize: props.size || '1rem'

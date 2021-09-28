@@ -31,7 +31,7 @@ export const Icons = () => {
 
     <PageBlock>
 
-      <PageRow number='2'>
+      <PageRow number='1'>
         <Card round minWidth='60rem'>
 
           <CardHeader>

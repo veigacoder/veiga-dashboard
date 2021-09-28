@@ -31,6 +31,8 @@ export const AppBar = () => {
   }
 
   useEffect(() => {
+    setCard('none')
+    setToggle(true)
     window.addEventListener('scroll', handleScroll, { passive: true })
 
     return () => {
@@ -46,7 +48,10 @@ export const AppBar = () => {
           <Card round color={card} show={toggle}>
             <PageRow number='20' smNumber='5' mdNumber='5'>
 
-              <BarButton title='User'>
+              <BarButton
+                title='User'
+                onClick={() => history.push('/profile')}
+              >
                 <Icon.Person />
               </BarButton>
 

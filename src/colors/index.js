@@ -10,7 +10,7 @@ export const bg = {
   actionTranslucid: '#326DB344',
   action: '#31333F',
   toAction: '#4274B1',
-  creation: '#80C3BC'
+  creation: '#B4E6E2'
 }
 
 export const fg = {
@@ -29,7 +29,7 @@ export const gradient = {
   red: 'linear-gradient(45deg, #C62F2F, #B63535)',
   green: 'linear-gradient(45deg, #41D246, #26BF2B )',
   blue: 'linear-gradient(45deg, #2962FF, #1855FE)',
-  creation: 'linear-gradient(45deg, #80C3BC, #6AA39D)',
+  creation: 'linear-gradient(45deg, #B4E6E2, #80C3BC)',
   default: 'linear-gradient(45deg, #151515, #1C1D21)',
   noColor: 'linear-gradient(45deg, #15151500, #1C1D2100)'
 
