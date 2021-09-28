@@ -49,7 +49,7 @@ export const Home = () => {
   return (
 
     <PageBlock>
-      <PageRow>
+      <PageRow mdNumber='1'>
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.red}>
@@ -119,7 +119,7 @@ export const Home = () => {
         </Card>
       </PageRow>
 
-      <PageRow number='2'>
+      <PageRow number='2' mdNumber='1'>
         <Card round>
           <CardHeader>
             <GradientLabel round>

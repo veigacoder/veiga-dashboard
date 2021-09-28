@@ -2,22 +2,55 @@ import styled from 'styled-components'
 import { bg, fg, color } from '../../colors'
 
 export const Bar = styled.div.attrs(props => ({
-  orientation: props.direction || 'flex-end'
+  orientation: props.direction || 'flex-end',
+  position: props.position || 'static'
+
 }))`
-width: 100%;
+width:auto;
 height: max-content;
 display: flex;
 flex-direction: row;
 align-items: center;
+position: ${props => props.position};
 justify-content: flex-end;
 background-color: #fff0; //invisible
 color: ${props => props.light ? fg.normal : fg.dark};
-z-index: 10;
+z-index: 20;
+top: 0;
+@media screen and (max-width: 997px) {
+ position: static;
+};
+
+@media screen and (max-width: 800px) {
+  position: static;
+};
+`
+export const FooterBar = styled.div.attrs(props => ({
+  position: props.position || 'static'
+}))`
+width:100%;
+height: max-content;
+display: flex;
+flex-direction: row;
+align-items: center;
+position: ${props => props.position};
+justify-content: flex-end;
+background-color: ${bg.noColor}; //invisible
+color: ${props => props.light ? fg.normal : fg.dark};
+z-index: 20;
+top: 0;
+@media screen and (max-width: 997px) {
+ position: static;
+};
+
+@media screen and (max-width: 800px) {
+  position: static;
+};
 `
 
 export const BarContent = styled.div.attrs(props => ({
   columns: props.number || '1',
-  direction: props.direction || 'ltr'
+  direction: props.direction || 'none'
 }))`
 justify-content: ${props => props.orientation};
 direction: ${props => props.direction};

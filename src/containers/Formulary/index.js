@@ -6,6 +6,9 @@ border-style: none;
 outline-style: none ;
 border-radius: 50px;
 color: ${fg.dark};
+justify-content: flex-start;
+direction: initial;
+display: flex;
 background-color: ${bg.transparent};
 padding: 1rem;
 height: max-content;
@@ -15,9 +18,7 @@ align-self: center;
   color: ${bg.platinum};
   cursor: not-allowed;
 }
-range: {
-  color:bg.action;
-};
+
 `
 
 export const ColorInput = styled.input`

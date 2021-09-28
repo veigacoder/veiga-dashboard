@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import {
   AppBar,
@@ -33,7 +33,7 @@ export const App = () => {
           <SideAppBar />
         </DisplaySide>
         <DisplayBody>
-          <DisplayTop>
+          <DisplayTop position='relative'>
             <AppBar />
           </DisplayTop>
           <Switch>

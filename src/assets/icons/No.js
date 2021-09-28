@@ -12,7 +12,6 @@ export const No = forwardRef(({ color = 'currentColor', size = 24, ...rest }, re
       fill={color}
       rest={rest}
     >
-      <title>No</title>
       <rect class='a' x='-4.31' y='10.42' width='32.63' height='3.17' rx='1.58' transform='translate(12 28.97) rotate(-135)' /><rect class='a' x='-4.31' y='10.42' width='32.63' height='3.17' rx='1.58' transform='translate(-4.97 12) rotate(-45)' />
     </svg>
   )

@@ -12,7 +12,6 @@ export const List = forwardRef(({ color = 'currentColor', size = 24, ...rest }, 
       fill={color}
       rest={rest}
     >
-      <title>List</title>
       <rect class='a' x='9' y='1' width='15' height='4' rx='2' /><rect class='a' width='6' height='6' rx='3' /><rect class='a' x='9' y='10' width='15' height='4' rx='2' /><rect class='a' y='9' width='6' height='6' rx='3' /><rect class='a' x='9' y='19' width='15' height='4' rx='2' /><rect class='a' y='18' width='6' height='6' rx='3' />
     </svg>
   )

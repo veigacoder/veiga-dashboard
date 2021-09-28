@@ -12,7 +12,6 @@ export const Grid = forwardRef(({ color = 'currentColor', size = 24, ...rest }, 
       fill={color}
       rest={rest}
     >
-      <title>Grid</title>
       <rect class='a' x='13' y='13' width='11' height='11' rx='2' transform='translate(37 37) rotate(180)' /><rect class='a' width='11' height='11' rx='2' transform='translate(11 11) rotate(180)' /><rect class='a' x='13' width='11' height='11' rx='2' transform='translate(37 11) rotate(180)' /><rect class='a' y='13' width='11' height='11' rx='2' transform='translate(11 37) rotate(180)' />
     </svg>
   )

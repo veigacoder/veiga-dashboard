@@ -13,7 +13,6 @@ export const Check = forwardRef(({ color = 'currentColor', size = 24, ...rest },
       fill={color}
       rest={rest}
     >
-      <title>Check</title>
       <path class='a' d='M23.6.39a1.33,1.33,0,0,1,0,1.87L6.92,18.94l-.8.8a1.33,1.33,0,0,1-1.87,0l-.94-.94-3-3a1.12,1.12,0,0,1,0-1.58h0a1.32,1.32,0,0,1,1.88,0l1.9,1.89a1.32,1.32,0,0,0,1.87,0L21.72.39a1.33,1.33,0,0,1,1.88,0Z' transform='translate(-0.02)' />
     </svg>
   )

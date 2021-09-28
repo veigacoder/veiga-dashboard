@@ -12,8 +12,7 @@ export const Person = forwardRef(({ color = 'currentColor', size = 24, ...rest }
       fill={color}
       rest={rest}
     >
-      <title>Person</title>
-      <path class='a' d='M16,5c0,3.31-3.2,6-4,6S8,8.31,8,5a4.33,4.33,0,0,1,.86-2.54,3.73,3.73,0,0,1,6.28,0A4.33,4.33,0,0,1,16,5Z' transform='translate(-3 -0.74)' /><path class='a' d='M3,22a8.51,8.51,0,0,1,3-7c1.39-1.19,5-2,6-2s4.6.78,6,2a8.7,8.7,0,0,1,3,7' transform='translate(-3 -0.74)' />
+      <path class='a' d='M17.33,4.81c0,3.74-4.26,6.77-5.33,6.77s-5.33-3-5.33-6.77A4.4,4.4,0,0,1,7.82,1.94a5.47,5.47,0,0,1,8.36,0A4.4,4.4,0,0,1,17.33,4.81Z' transform='translate(0)' /><path class='a' d='M0,24a8.94,8.94,0,0,1,4-7.9c1.85-1.35,6.61-2.26,8-2.26s6.13.87,8,2.26A9.16,9.16,0,0,1,24,24' transform='translate(0)' />
     </svg>
   )
 })

@@ -1,3 +1,4 @@
+
 export { default as Book } from './Book'
 export { default as Check } from './Check'
 export { default as Clipboard } from './Clipboard'
@@ -8,6 +9,7 @@ export { default as EditInfo } from './EditInfo'
 export { default as Eye } from './Eye'
 export { default as EyeClosed } from './EyeClosed'
 export { default as Grid } from './Grid'
+export { default as Heart } from './Heart'
 export { default as Home } from './Home'
 export { default as Icons } from './Icons'
 export { default as List } from './List'

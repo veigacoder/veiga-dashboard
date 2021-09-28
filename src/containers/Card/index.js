@@ -2,26 +2,29 @@ import styled from 'styled-components'
 import { bg, fg, gradient } from '../../colors'
 
 export const Card = styled.div.attrs(props => ({
-  color: props.color || bg.platinum
+  color: props.color || bg.platinum,
+  position: props.position || 'static'
 }))`
 background-color: ${props => props.color};
 display: flex;
 flex-direction: column;
 align-items: center;
+position: ${props => props.position};
 color: ${fg.dark};
 width: 100%;
 height: 100%;
 border-radius: ${props => props.round ? '.5em' : 'none'};
-box-shadow: 0 4px 20px 0 ${bg.translucid};
+box-shadow: ${props => props.show ? 'none' : `0 4px 20px 0 ${bg.translucid}`};
 z-index: 15;
 transition: all 250ms ease;
 max-height: 100%;
 @media screen and (max-width: 997px) {
-  &+& {margin-top: 3rem;}
+  background: ${bg.noColor};
 };
 
 @media screen and (max-width: 800px) {
-  &+& {margin-top: 3rem;}
+  background: ${bg.noColor};
+ 
 };
 `
 
