@@ -33,7 +33,7 @@ export const App = () => {
           <SideAppBar />
         </DisplaySide>
         <DisplayBody>
-          <DisplayTop position='relative'>
+          <DisplayTop>
             <AppBar />
           </DisplayTop>
           <Switch>
