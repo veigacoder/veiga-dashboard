@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Input } from '../../containers/Formulary'
-import { Card, ColorLabel, GradientLabel, CardHeader, HeaderData, CardSide, CardBody, CardFooter } from '../../containers/Card'
+import { Card, GradientLabel, CardHeader, HeaderData, CardSide, CardBody, CardFooter } from '../../containers/Card'
 import { bg, gradient } from '../../colors'
 import * as Icon from '../../assets/icons'
 import { Button, ButtonHeader } from '../../containers/Buttons'
@@ -17,7 +17,7 @@ export const UserFormulary = () => {
           <span><a className='creation'>Edit you profile info</a></span>
         </HeaderData>
       </CardHeader>
-      <CardBody>
+      <CardBody direction='row'>
         <Form>
           <Input placeholder='First name' type='text' />
           <Input placeholder='Last name' type='text' />
@@ -29,13 +29,15 @@ export const UserFormulary = () => {
             </ButtonHeader>
             Submit changes
           </Button>
+          <Button disabled>
+            <ButtonHeader>
+              <Icon.CameraAdd />
+            </ButtonHeader>
+            Upload photo
+          </Button>
         </Form>
       </CardBody>
-      <CardFooter>
-        <Button>
-          Upload photo
-        </Button>
-      </CardFooter>
+
     </Card>
   )
 }

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Button, ButtonHeader } from '../../containers/Buttons'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
-import { PageBlock, PageRow } from '../../containers/Display'
-import { bg, color, fg, gradient } from '../../colors'
+import { PageBlock, Row } from '../../containers/Display'
+import { bg, gradient } from '../../colors'
 import { descendo, crescendo } from '../../assets/chartdata/precision'
 import { BarChart, LineChart } from '../../containers/Charts'
 import * as Icon from '../../assets/icons'
@@ -49,7 +49,7 @@ export const Home = () => {
   return (
 
     <PageBlock>
-      <PageRow mdNumber='1'>
+      <Row mdNumber='1'>
         <Card round>
           <CardHeader>
             <GradientLabel round color={gradient.red}>
@@ -117,9 +117,9 @@ export const Home = () => {
             </Button>
           </CardFooter>
         </Card>
-      </PageRow>
+      </Row>
 
-      <PageRow number='2' mdNumber='1'>
+      <Row number='2' mdNumber='1'>
         <Card round>
           <CardHeader>
             <GradientLabel round>
@@ -157,7 +157,7 @@ export const Home = () => {
           </CardHeader>
           <CardBody />
         </Card>
-      </PageRow>
+      </Row>
     </PageBlock>
   )
 }

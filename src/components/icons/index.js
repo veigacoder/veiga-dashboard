@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Button, ButtonHeader } from '../../containers/Buttons'
+import { Button } from '../../containers/Buttons'
 import * as Icon from '../../assets/icons'
-import { PageBlock, PageRow } from '../../containers/Display'
+import { PageBlock, Row } from '../../containers/Display'
 import { Card, CardBody, CardFooter, CardHeader, GradientLabel, HeaderData } from '../../containers/Card'
-import { color, gradient } from '../../colors'
+import { gradient } from '../../colors'
 import { Input, ColorInput } from '../../containers/Formulary'
 
 export const Icons = () => {
@@ -31,9 +31,31 @@ export const Icons = () => {
 
     <PageBlock>
 
-      <PageRow number='1'>
-        <Card round minWidth='60rem'>
+      <Row number='3'>
 
+        <Card round>
+          <CardBody>
+            <Input placeholder='Size' onChange={getInputData} type='range' />
+            <label for={inputData}>{inputData}px</label>
+          </CardBody>
+        </Card>
+
+        <Card round minHeight='200px'>
+          <CardBody>
+            <Icon.Edit size={inputData} color={iconColor} />
+          </CardBody>
+        </Card>
+
+        <Card round>
+          <CardBody>
+            <ColorInput placeholder='Size' onChange={getInputColor} type='color' />
+            <label for={iconColor}>{iconColor}</label>
+          </CardBody>
+        </Card>
+      </Row>
+
+      <Row number='1'>
+        <Card round minWidth='60rem'>
           <CardHeader>
             <GradientLabel round color={gradient.blue}>
               <h1>These icons are prototypes </h1>
@@ -43,177 +65,116 @@ export const Icons = () => {
               <span>veigacoder</span>
             </HeaderData>
           </CardHeader>
-
-          <CardHeader>
-            <Button onClick={toggleGrid} title='Grid View'>
-              <Icon.Grid />
-            </Button>
-            <Button onClick={toggleList} title='List View'>
-              <Icon.List />
-            </Button>
-          </CardHeader>
-
-          <CardHeader>
-            <Card round>
-              <CardBody>
-                <Input placeholder='Size' onChange={getInputData} type='range' />
-                <ColorInput placeholder='Size' onChange={getInputColor} type='color' value='#1C1C1C' />
-                <label for={inputData}>{inputData}px</label>
-              </CardBody>
-              <CardFooter>
-                <Icon.Edit size={inputData} color={iconColor} />
-              </CardFooter>
-            </Card>
-          </CardHeader>
           <CardBody>
-            <PageRow number={view} smNumber='2'>
+            <Row number='2'>
+              <Button onClick={toggleGrid} title='Grid View'>
+                <Icon.Grid />
+              </Button>
+              <Button onClick={toggleList} title='List View'>
+                <Icon.List />
+              </Button>
+            </Row>
+          </CardBody>
+          <CardBody>
+
+            <Row number={view} smNumber='2'>
               <Button>
-                <ButtonHeader>
-                  <Icon.Book />
-                </ButtonHeader>
-                Book
+                <Icon.Book />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Check />
-                </ButtonHeader>
-                Check
+                <Icon.Check />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Clipboard />
-                </ButtonHeader>
-                Clipboard
+                <Icon.Clipboard />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Dashboard />
-                </ButtonHeader>
-                Dashboard
+                <Icon.Dashboard />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Duster />
-                </ButtonHeader>
-                Duster
+                <Icon.Duster />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Edit />
-                </ButtonHeader>
-                Edit
+                <Icon.Download />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.EditInfo />
-                </ButtonHeader>
-                EditInfo
+                <Icon.Edit />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Eye />
-                </ButtonHeader>
-                Eye
+                <Icon.EditInfo />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.EyeClosed />
-                </ButtonHeader>
-                EyeClosed
+                <Icon.Eye />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Heart />
-                </ButtonHeader>
-                Heart
+                <Icon.EyeClosed />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Home />
-                </ButtonHeader>
-                Home
+                <Icon.Heart />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Icons />
-                </ButtonHeader>
-                Icons
+                <Icon.Home />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Moon />
-                </ButtonHeader>
-                Moon
+                <Icon.Icons />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.No />
-                </ButtonHeader>
-                No
+                <Icon.Moon />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Person />
-                </ButtonHeader>
-                Person
+                <Icon.No />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Sandbox />
-                </ButtonHeader>
-                Sandbox
+                <Icon.Person />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Sun />
-                </ButtonHeader>
-                Sun
+                <Icon.Sandbox />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Save />
-                </ButtonHeader>
-                Save
+                <Icon.Sun />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.Zoom />
-                </ButtonHeader>
-                Zoom
+                <Icon.Save />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.ZoomIn />
-                </ButtonHeader>
-                ZoomIn
+                <Icon.Target />
               </Button>
 
               <Button>
-                <ButtonHeader>
-                  <Icon.ZoomOut />
-                </ButtonHeader>
-                ZoomOut
+                <Icon.Upload />
               </Button>
-            </PageRow>
+
+              <Button>
+                <Icon.Zoom />
+              </Button>
+
+              <Button>
+                <Icon.ZoomIn />
+              </Button>
+
+              <Button>
+                <Icon.ZoomOut />
+              </Button>
+
+            </Row>
           </CardBody>
 
           <CardFooter>
@@ -226,8 +187,7 @@ export const Icons = () => {
             </HeaderData>
           </CardFooter>
         </Card>
-
-      </PageRow>
+      </Row>
 
     </PageBlock>
 

@@ -1,9 +1,7 @@
 import { SideBar, SideBarContent, SideBarHeader } from '../../containers/Bars'
-import { Card, CardBody } from '../../containers/Card'
-import { Button, ButtonHeader, IconButton } from '../../containers/Buttons'
+import { Button, ButtonHeader } from '../../containers/Buttons'
 import * as Icon from '../../assets/icons'
 import { useHistory } from 'react-router'
-import { Icons } from '../../assets/icons'
 
 export const SideAppBar = () => {
   const history = useHistory()
@@ -12,9 +10,7 @@ export const SideAppBar = () => {
 
     <SideBar>
       <SideBarHeader>
-        <a href='https://github.com/veigacoder' target='blank_'>
-          <b>veigacoder</b>
-        </a>
+        <b>veigacoder</b>
       </SideBarHeader>
       <SideBarContent>
 

@@ -1,7 +1,6 @@
 import { Bar, BarContent } from '../../containers/Bars'
-import { Card, CardBody } from '../../containers/Card'
+import { Card } from '../../containers/Card'
 import { Input } from '../../containers/Formulary'
-import { PageRow } from '../../containers/Display'
 import { BarButton } from '../../containers/Buttons'
 import { useHistory } from 'react-router-dom'
 import * as Icon from '../../assets/icons'
@@ -11,7 +10,7 @@ import { bg } from '../../colors'
 export const AppBar = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
   const [toggle, setToggle] = useState(false)
-  const [barPos, setBarPos] = useState('static')
+  const [barPos, setBarPos] = useState('fixed')
   const [card, setCard] = useState(bg.platinum)
 
   const history = useHistory()
@@ -19,14 +18,19 @@ export const AppBar = () => {
   const handleScroll = () => {
     const position = window.scrollY
     setScrollPosition(position)
-    if (window.scrollY <= 0) {
-      setBarPos('static')
+    if (window.scrollY < 2 && window.innerHeight > 600) {
       setCard('none')
       setToggle(true)
-    } else {
-      setBarPos('fixed')
+      console.log(window.innerHeight)
+    }
+    if (window.scrollY > 2 && window.innerHeight > 600) {
       setCard(bg.platinum)
       setToggle(false)
+    }
+    if (window.innerHeight < 600) {
+      setCard('none')
+      setToggle(true)
+      setBarPos('static')
     }
   }
 
@@ -40,40 +44,35 @@ export const AppBar = () => {
     }
   }, [])
   return (
-    <>
 
-      <Bar position={barPos}>
-
+    <Bar position={barPos}>
+      <Card color={card} show={toggle}>
         <BarContent direction='rtl'>
-          <Card round color={card} show={toggle}>
-            <PageRow number='20' smNumber='5' mdNumber='5'>
 
-              <BarButton
-                title='User'
-                onClick={() => history.push('/profile')}
-              >
-                <Icon.Person />
-              </BarButton>
+          <BarButton
+            title='User'
+            onClick={() => history.push('/profile')}
+          >
+            <Icon.Person />
+          </BarButton>
 
-              <BarButton
-                title='Dashboard'
-                onClick={() => history.push('/')}
-              >
-                <Icon.Dashboard />
-              </BarButton>
+          <BarButton
+            title='Dashboard'
+            onClick={() => history.push('/')}
+          >
+            <Icon.Dashboard />
+          </BarButton>
 
-              <BarButton title='Search'>
-                <Icon.Zoom />
-              </BarButton>
+          <BarButton title='Search'>
+            <Icon.Zoom />
+          </BarButton>
 
-              <Input placeholder='Search' />
-            </PageRow>
+          <Input placeholder='Search' />
 
-          </Card>
         </BarContent>
+      </Card>
+    </Bar>
 
-      </Bar>
-    </>
   )
 }
 
