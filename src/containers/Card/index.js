@@ -3,7 +3,8 @@ import { bg, fg, gradient } from '../../colors'
 
 export const Card = styled.div.attrs(props => ({
   color: props.color || bg.platinum,
-  position: props.position || 'static'
+  position: props.position || 'static',
+  minHeight: props.minHeight || 'none'
 }))`
 background-color: ${props => props.color};
 display: flex;
@@ -11,36 +12,49 @@ flex-direction: column;
 align-items: center;
 position: ${props => props.position};
 color: ${fg.dark};
+min-width: max-content;
 width: 100%;
 height: 100%;
+min-height:${props => props.minHeight};
 border-radius: ${props => props.round ? '.5em' : 'none'};
 box-shadow: ${props => props.show ? 'none' : `0 4px 20px 0 ${bg.translucid}`};
-z-index: 15;
+z-index: 10;
 transition: all 250ms ease;
 max-height: 100%;
-@media screen and (max-width: 997px) {
-  background: ${bg.noColor};
+
+
+@media screen and (max-width: 600px) {
+width: 100%;
+font-size: 5vw;
 };
 
-@media screen and (max-width: 800px) {
-  background: ${bg.noColor};
- 
-};
+
 `
 
 export const CardBody = styled.div.attrs(props => ({
-
+  direction: props.direction || 'column'
 }))`
 justify-content: center;
 position: static;
 align-items: center;
 display: flex;
+flex-direction: ${props => props.direction};
 padding: 1rem;
 border-radius: inherit;
 flex-wrap: wrap;
 height: 100%;
+width: max-content;
 max-height: 100%;
+font-size: inherit;
 transition: all 250ms ease;
+@media screen and (max-width: 997px) {
+  padding: .5rem;
+
+}
+@media screen and (max-width: 800px) {
+  padding: .2rem;
+ 
+}
 `
 export const CardHeader = styled.div.attrs(props => ({
   border: props.border || 'none'
@@ -62,6 +76,7 @@ border-radius: inherit;
 padding: .5rem;
 border-left: .1px dashed ${bg.actionTranslucid};
 align-items: flex-start;
+margin: 0 0 0 2em;
 `
 export const CardFooter = styled.div.attrs(props => ({
   minHeight: props.minHeight || 'max-content',
