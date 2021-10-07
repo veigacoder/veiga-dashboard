@@ -18,12 +18,6 @@ align-self: center;
   color: ${bg.platinum};
   cursor: not-allowed;
 }
-:focus-visible{
-background-color: ${bg.normal};
-color: ${fg.normal};
-
-}
-
 `
 
 export const ColorInput = styled.input`
